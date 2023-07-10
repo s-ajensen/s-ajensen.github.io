@@ -50,8 +50,8 @@ while(true){
 if(cljs.core.truth_(ttt.move.game_over_QMARK_.call(null,board))){
 return board;
 } else {
-var G__4267 = ttt.move.next_move.call(null,new cljs.core.Keyword(null,"difficulty","difficulty",755680807).cljs$core$IFn$_invoke$arity$1(state),board);
-board = G__4267;
+var G__3824 = ttt.move.next_move.call(null,new cljs.core.Keyword(null,"difficulty","difficulty",755680807).cljs$core$IFn$_invoke$arity$1(state),board);
+board = G__3824;
 continue;
 }
 break;
