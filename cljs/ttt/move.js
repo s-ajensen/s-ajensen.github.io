@@ -10,11 +10,11 @@ throw cljs.core.ex_info.call(null,["tile ",cljs.core.str.cljs$core$IFn$_invoke$a
 }
 });
 ttt.move.cur_token = (function ttt$move$cur_token(board){
-var x = cljs.core.count.call(null,cljs.core.filter.call(null,(function (p1__3808_SHARP_){
-return cljs.core._EQ_.call(null,"X",p1__3808_SHARP_);
+var x = cljs.core.count.call(null,cljs.core.filter.call(null,(function (p1__4251_SHARP_){
+return cljs.core._EQ_.call(null,"X",p1__4251_SHARP_);
 }),board));
-var y = cljs.core.count.call(null,cljs.core.filter.call(null,(function (p1__3809_SHARP_){
-return cljs.core._EQ_.call(null,"O",p1__3809_SHARP_);
+var y = cljs.core.count.call(null,cljs.core.filter.call(null,(function (p1__4252_SHARP_){
+return cljs.core._EQ_.call(null,"O",p1__4252_SHARP_);
 }),board));
 if(cljs.core._EQ_.call(null,x,y)){
 return "X";
@@ -30,8 +30,8 @@ return "X";
 }
 });
 ttt.move.open_moves = (function ttt$move$open_moves(board){
-return cljs.core.map.call(null,cljs.core.first,cljs.core.filter.call(null,(function (p1__3810_SHARP_){
-return cljs.core._EQ_.call(null,cljs.core.second.call(null,p1__3810_SHARP_),null);
+return cljs.core.map.call(null,cljs.core.first,cljs.core.filter.call(null,(function (p1__4253_SHARP_){
+return cljs.core._EQ_.call(null,cljs.core.second.call(null,p1__4253_SHARP_),null);
 }),cljs.core.map_indexed.call(null,cljs.core.vector,board)));
 });
 ttt.move.reverse_diag = (function ttt$move$reverse_diag(board){
@@ -40,21 +40,21 @@ return cljs.core.flatten.call(null,cljs.core.reverse.call(null,cljs.core.partiti
 ttt.move.winnable_lines = (function ttt$move$winnable_lines(board){
 var length = ttt.util.length.call(null,board);
 var rows = cljs.core.partition.call(null,length,board);
-var cols = cljs.core.map.call(null,(function (p1__3811_SHARP_){
-return cljs.core.take_nth.call(null,length,p1__3811_SHARP_);
+var cols = cljs.core.map.call(null,(function (p1__4254_SHARP_){
+return cljs.core.take_nth.call(null,length,p1__4254_SHARP_);
 }),cljs.core.take.call(null,length,cljs.core.iterate.call(null,cljs.core.rest,board)));
 var diag = (new cljs.core.List(null,cljs.core.take_nth.call(null,(length + (1)),board),(new cljs.core.List(null,cljs.core.take_nth.call(null,(length + (1)),ttt.move.reverse_diag.call(null,board)),null,(1),null)),(2),null));
 return cljs.core.concat.call(null,rows,cols,diag);
 });
 ttt.move.win_QMARK_ = (function ttt$move$win_QMARK_(board){
-return cljs.core.some.call(null,(function (p1__3815_SHARP_){
-return (!(cljs.core.every_QMARK_.call(null,cljs.core.nil_QMARK_,p1__3815_SHARP_)));
-}),cljs.core.map.call(null,(function (p1__3814_SHARP_){
-return cljs.core.flatten.call(null,p1__3814_SHARP_);
-}),cljs.core.filter.call(null,(function (p1__3813_SHARP_){
-return cljs.core._EQ_.call(null,(1),cljs.core.count.call(null,p1__3813_SHARP_));
-}),cljs.core.map.call(null,(function (p1__3812_SHARP_){
-return cljs.core.partition_by.call(null,cljs.core.identity,p1__3812_SHARP_);
+return cljs.core.some.call(null,(function (p1__4258_SHARP_){
+return (!(cljs.core.every_QMARK_.call(null,cljs.core.nil_QMARK_,p1__4258_SHARP_)));
+}),cljs.core.map.call(null,(function (p1__4257_SHARP_){
+return cljs.core.flatten.call(null,p1__4257_SHARP_);
+}),cljs.core.filter.call(null,(function (p1__4256_SHARP_){
+return cljs.core._EQ_.call(null,(1),cljs.core.count.call(null,p1__4256_SHARP_));
+}),cljs.core.map.call(null,(function (p1__4255_SHARP_){
+return cljs.core.partition_by.call(null,cljs.core.identity,p1__4255_SHARP_);
 }),ttt.move.winnable_lines.call(null,board)))));
 });
 ttt.move.tie_QMARK_ = (function ttt$move$tie_QMARK_(board){
@@ -81,8 +81,8 @@ return ttt.move.next_token.call(null,board);
 }
 });
 ttt.move.possible_moves = (function ttt$move$possible_moves(board){
-return cljs.core.map.call(null,(function (p1__3816_SHARP_){
-return ttt.move.move.call(null,p1__3816_SHARP_,ttt.move.cur_token.call(null,board),board);
+return cljs.core.map.call(null,(function (p1__4259_SHARP_){
+return ttt.move.move.call(null,p1__4259_SHARP_,ttt.move.cur_token.call(null,board),board);
 }),ttt.move.open_moves.call(null,board));
 });
 ttt.move.eval_pos = (function ttt$move$eval_pos(board,depth,maximizing_QMARK_){
@@ -104,12 +104,12 @@ if((depth === (0))){
 return (0);
 } else {
 if(cljs.core.truth_(maximizing_QMARK_)){
-return cljs.core.apply.call(null,cljs.core.min,cljs.core.map.call(null,(function (p1__3817_SHARP_){
-return ttt.move.minimax.call(null,p1__3817_SHARP_,(depth - (1)),false);
+return cljs.core.apply.call(null,cljs.core.min,cljs.core.map.call(null,(function (p1__4260_SHARP_){
+return ttt.move.minimax.call(null,p1__4260_SHARP_,(depth - (1)),false);
 }),ttt.move.possible_moves.call(null,board)));
 } else {
-return cljs.core.apply.call(null,cljs.core.max,cljs.core.map.call(null,(function (p1__3818_SHARP_){
-return ttt.move.minimax.call(null,p1__3818_SHARP_,(depth - (1)),true);
+return cljs.core.apply.call(null,cljs.core.max,cljs.core.map.call(null,(function (p1__4261_SHARP_){
+return ttt.move.minimax.call(null,p1__4261_SHARP_,(depth - (1)),true);
 }),ttt.move.possible_moves.call(null,board)));
 
 }
@@ -138,18 +138,18 @@ return difficulty;
 })();
 }
 cljs.core._add_method.call(null,ttt.move.next_move,new cljs.core.Keyword(null,"default","default",-1987822328),(function (_,board){
-return cljs.core.apply.call(null,cljs.core.max_key,(function (p1__3819_SHARP_){
-return ttt.move.minimax.call(null,p1__3819_SHARP_,ttt.move.get_depth.call(null,board),true);
+return cljs.core.apply.call(null,cljs.core.max_key,(function (p1__4262_SHARP_){
+return ttt.move.minimax.call(null,p1__4262_SHARP_,ttt.move.get_depth.call(null,board),true);
 }),ttt.move.possible_moves.call(null,board));
 }));
 cljs.core._add_method.call(null,ttt.move.next_move,new cljs.core.Keyword(null,"easy","easy",315769928),(function (_,board){
-return cljs.core.apply.call(null,cljs.core.min_key,(function (p1__3820_SHARP_){
-return ttt.move.minimax.call(null,p1__3820_SHARP_,ttt.move.get_depth.call(null,board),true);
+return cljs.core.apply.call(null,cljs.core.min_key,(function (p1__4263_SHARP_){
+return ttt.move.minimax.call(null,p1__4263_SHARP_,ttt.move.get_depth.call(null,board),true);
 }),ttt.move.possible_moves.call(null,board));
 }));
 cljs.core._add_method.call(null,ttt.move.next_move,new cljs.core.Keyword(null,"med","med",-1154404524),(function (_,board){
-return cljs.core.apply.call(null,cljs.core.max_key,(function (p1__3821_SHARP_){
-return ttt.move.minimax.call(null,p1__3821_SHARP_,(2),true);
+return cljs.core.apply.call(null,cljs.core.max_key,(function (p1__4264_SHARP_){
+return ttt.move.minimax.call(null,p1__4264_SHARP_,(2),true);
 }),ttt.move.possible_moves.call(null,board));
 }));
 

@@ -10,27 +10,27 @@ return clojure.set.subset_QMARK_.call(null,clojure.set(target),clojure.set(coll)
 });
 ttt.core_spec.get_by_type = (function ttt$core_spec$get_by_type(coll,target){
 var tags = cljs.core.filter.call(null,cljs.core.sequential_QMARK_,coll);
-return cljs.core.apply.call(null,cljs.core.concat,cljs.core.filter.call(null,(function (p1__5504_SHARP_){
-return cljs.core._EQ_.call(null,target,cljs.core.first.call(null,p1__5504_SHARP_));
-}),tags),(function (){var iter__4529__auto__ = (function ttt$core_spec$get_by_type_$_iter__5505(s__5506){
+return cljs.core.apply.call(null,cljs.core.concat,cljs.core.filter.call(null,(function (p1__7049_SHARP_){
+return cljs.core._EQ_.call(null,target,cljs.core.first.call(null,p1__7049_SHARP_));
+}),tags),(function (){var iter__4529__auto__ = (function ttt$core_spec$get_by_type_$_iter__7050(s__7051){
 return (new cljs.core.LazySeq(null,(function (){
-var s__5506__$1 = s__5506;
+var s__7051__$1 = s__7051;
 while(true){
-var temp__5804__auto__ = cljs.core.seq.call(null,s__5506__$1);
+var temp__5804__auto__ = cljs.core.seq.call(null,s__7051__$1);
 if(temp__5804__auto__){
-var s__5506__$2 = temp__5804__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,s__5506__$2)){
-var c__4527__auto__ = cljs.core.chunk_first.call(null,s__5506__$2);
+var s__7051__$2 = temp__5804__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,s__7051__$2)){
+var c__4527__auto__ = cljs.core.chunk_first.call(null,s__7051__$2);
 var size__4528__auto__ = cljs.core.count.call(null,c__4527__auto__);
-var b__5508 = cljs.core.chunk_buffer.call(null,size__4528__auto__);
-if((function (){var i__5507 = (0);
+var b__7053 = cljs.core.chunk_buffer.call(null,size__4528__auto__);
+if((function (){var i__7052 = (0);
 while(true){
-if((i__5507 < size__4528__auto__)){
-var tag = cljs.core._nth.call(null,c__4527__auto__,i__5507);
-cljs.core.chunk_append.call(null,b__5508,ttt.core_spec.get_by_type.call(null,tag,target));
+if((i__7052 < size__4528__auto__)){
+var tag = cljs.core._nth.call(null,c__4527__auto__,i__7052);
+cljs.core.chunk_append.call(null,b__7053,ttt.core_spec.get_by_type.call(null,tag,target));
 
-var G__5509 = (i__5507 + (1));
-i__5507 = G__5509;
+var G__7054 = (i__7052 + (1));
+i__7052 = G__7054;
 continue;
 } else {
 return true;
@@ -38,13 +38,13 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__5508),ttt$core_spec$get_by_type_$_iter__5505.call(null,cljs.core.chunk_rest.call(null,s__5506__$2)));
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__7053),ttt$core_spec$get_by_type_$_iter__7050.call(null,cljs.core.chunk_rest.call(null,s__7051__$2)));
 } else {
-return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__5508),null);
+return cljs.core.chunk_cons.call(null,cljs.core.chunk.call(null,b__7053),null);
 }
 } else {
-var tag = cljs.core.first.call(null,s__5506__$2);
-return cljs.core.cons.call(null,ttt.core_spec.get_by_type.call(null,tag,target),ttt$core_spec$get_by_type_$_iter__5505.call(null,cljs.core.rest.call(null,s__5506__$2)));
+var tag = cljs.core.first.call(null,s__7051__$2);
+return cljs.core.cons.call(null,ttt.core_spec.get_by_type.call(null,tag,target),ttt$core_spec$get_by_type_$_iter__7050.call(null,cljs.core.rest.call(null,s__7051__$2)));
 }
 } else {
 return null;
@@ -56,70 +56,70 @@ break;
 return iter__4529__auto__.call(null,tags);
 })());
 });
-var description__5041__auto___5516 = speclj.components.new_description.call(null,"state changer",false,"ttt.core-spec");
-var _STAR_parent_description_STAR__orig_val__5510_5517 = speclj.config._STAR_parent_description_STAR_;
-var _STAR_parent_description_STAR__temp_val__5511_5518 = description__5041__auto___5516;
-(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__temp_val__5511_5518);
+var description__6586__auto___7061 = speclj.components.new_description.call(null,"state changer",false,"ttt.core-spec");
+var _STAR_parent_description_STAR__orig_val__7055_7062 = speclj.config._STAR_parent_description_STAR_;
+var _STAR_parent_description_STAR__temp_val__7056_7063 = description__6586__auto___7061;
+(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__temp_val__7056_7063);
 
-try{var seq__5512_5519 = cljs.core.seq.call(null,(new cljs.core.PersistentVector(null,1,(5),cljs.core.PersistentVector.EMPTY_NODE,[speclj.components.new_characteristic.call(null,"updates game state",((function (_STAR_parent_description_STAR__orig_val__5510_5517,_STAR_parent_description_STAR__temp_val__5511_5518,description__5041__auto___5516){
+try{var seq__7057_7064 = cljs.core.seq.call(null,(new cljs.core.PersistentVector(null,1,(5),cljs.core.PersistentVector.EMPTY_NODE,[speclj.components.new_characteristic.call(null,"updates game state",((function (_STAR_parent_description_STAR__orig_val__7055_7062,_STAR_parent_description_STAR__temp_val__7056_7063,description__6586__auto___7061){
 return (function (){
 ttt.components.update_state_BANG_.call(null,null,new cljs.core.Keyword(null,"some-key","some-key",-1462369503),new cljs.core.Keyword(null,"some-val","some-val",-997293714));
 
-var expected__5174__auto__ = new cljs.core.Keyword(null,"some-val","some-val",-997293714);
-var actual__5175__auto__ = new cljs.core.Keyword(null,"some-key","some-key",-1462369503).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,ttt.components.state));
-if(cljs.core._EQ_.call(null,expected__5174__auto__,actual__5175__auto__)){
+var expected__6719__auto__ = new cljs.core.Keyword(null,"some-val","some-val",-997293714);
+var actual__6720__auto__ = new cljs.core.Keyword(null,"some-key","some-key",-1462369503).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,ttt.components.state));
+if(cljs.core._EQ_.call(null,expected__6719__auto__,actual__6720__auto__)){
 return null;
 } else {
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5174__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5174__auto__)),speclj.platform.endl,"     got: ",(((actual__5175__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5175__auto__))," (using =)"].join('')));
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6719__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6719__auto__)),speclj.platform.endl,"     got: ",(((actual__6720__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6720__auto__))," (using =)"].join('')));
 }
-});})(_STAR_parent_description_STAR__orig_val__5510_5517,_STAR_parent_description_STAR__temp_val__5511_5518,description__5041__auto___5516))
+});})(_STAR_parent_description_STAR__orig_val__7055_7062,_STAR_parent_description_STAR__temp_val__7056_7063,description__6586__auto___7061))
 ,false)],null)));
-var chunk__5513_5520 = null;
-var count__5514_5521 = (0);
-var i__5515_5522 = (0);
+var chunk__7058_7065 = null;
+var count__7059_7066 = (0);
+var i__7060_7067 = (0);
 while(true){
-if((i__5515_5522 < count__5514_5521)){
-var component__5042__auto___5523 = cljs.core._nth.call(null,chunk__5513_5520,i__5515_5522);
-speclj.components.install.call(null,component__5042__auto___5523,description__5041__auto___5516);
+if((i__7060_7067 < count__7059_7066)){
+var component__6587__auto___7068 = cljs.core._nth.call(null,chunk__7058_7065,i__7060_7067);
+speclj.components.install.call(null,component__6587__auto___7068,description__6586__auto___7061);
 
 
-var G__5524 = seq__5512_5519;
-var G__5525 = chunk__5513_5520;
-var G__5526 = count__5514_5521;
-var G__5527 = (i__5515_5522 + (1));
-seq__5512_5519 = G__5524;
-chunk__5513_5520 = G__5525;
-count__5514_5521 = G__5526;
-i__5515_5522 = G__5527;
+var G__7069 = seq__7057_7064;
+var G__7070 = chunk__7058_7065;
+var G__7071 = count__7059_7066;
+var G__7072 = (i__7060_7067 + (1));
+seq__7057_7064 = G__7069;
+chunk__7058_7065 = G__7070;
+count__7059_7066 = G__7071;
+i__7060_7067 = G__7072;
 continue;
 } else {
-var temp__5804__auto___5528 = cljs.core.seq.call(null,seq__5512_5519);
-if(temp__5804__auto___5528){
-var seq__5512_5529__$1 = temp__5804__auto___5528;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__5512_5529__$1)){
-var c__4556__auto___5530 = cljs.core.chunk_first.call(null,seq__5512_5529__$1);
-var G__5531 = cljs.core.chunk_rest.call(null,seq__5512_5529__$1);
-var G__5532 = c__4556__auto___5530;
-var G__5533 = cljs.core.count.call(null,c__4556__auto___5530);
-var G__5534 = (0);
-seq__5512_5519 = G__5531;
-chunk__5513_5520 = G__5532;
-count__5514_5521 = G__5533;
-i__5515_5522 = G__5534;
+var temp__5804__auto___7073 = cljs.core.seq.call(null,seq__7057_7064);
+if(temp__5804__auto___7073){
+var seq__7057_7074__$1 = temp__5804__auto___7073;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__7057_7074__$1)){
+var c__4556__auto___7075 = cljs.core.chunk_first.call(null,seq__7057_7074__$1);
+var G__7076 = cljs.core.chunk_rest.call(null,seq__7057_7074__$1);
+var G__7077 = c__4556__auto___7075;
+var G__7078 = cljs.core.count.call(null,c__4556__auto___7075);
+var G__7079 = (0);
+seq__7057_7064 = G__7076;
+chunk__7058_7065 = G__7077;
+count__7059_7066 = G__7078;
+i__7060_7067 = G__7079;
 continue;
 } else {
-var component__5042__auto___5535 = cljs.core.first.call(null,seq__5512_5529__$1);
-speclj.components.install.call(null,component__5042__auto___5535,description__5041__auto___5516);
+var component__6587__auto___7080 = cljs.core.first.call(null,seq__7057_7074__$1);
+speclj.components.install.call(null,component__6587__auto___7080,description__6586__auto___7061);
 
 
-var G__5536 = cljs.core.next.call(null,seq__5512_5529__$1);
-var G__5537 = null;
-var G__5538 = (0);
-var G__5539 = (0);
-seq__5512_5519 = G__5536;
-chunk__5513_5520 = G__5537;
-count__5514_5521 = G__5538;
-i__5515_5522 = G__5539;
+var G__7081 = cljs.core.next.call(null,seq__7057_7074__$1);
+var G__7082 = null;
+var G__7083 = (0);
+var G__7084 = (0);
+seq__7057_7064 = G__7081;
+chunk__7058_7065 = G__7082;
+count__7059_7066 = G__7083;
+i__7060_7067 = G__7084;
 continue;
 }
 } else {
@@ -127,55 +127,55 @@ continue;
 }
 break;
 }
-}finally {(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__orig_val__5510_5517);
+}finally {(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__orig_val__7055_7062);
 }
 if(cljs.core.truth_(speclj.config._STAR_parent_description_STAR_)){
 } else {
-speclj.running.submit_description.call(null,speclj.config.active_runner.call(null),description__5041__auto___5516);
+speclj.running.submit_description.call(null,speclj.config.active_runner.call(null),description__6586__auto___7061);
 }
 
-var description__5041__auto___5546 = speclj.components.new_description.call(null,"radio menu component",false,"ttt.core-spec");
-var _STAR_parent_description_STAR__orig_val__5540_5547 = speclj.config._STAR_parent_description_STAR_;
-var _STAR_parent_description_STAR__temp_val__5541_5548 = description__5041__auto___5546;
-(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__temp_val__5541_5548);
+var description__6586__auto___7091 = speclj.components.new_description.call(null,"radio menu component",false,"ttt.core-spec");
+var _STAR_parent_description_STAR__orig_val__7085_7092 = speclj.config._STAR_parent_description_STAR_;
+var _STAR_parent_description_STAR__temp_val__7086_7093 = description__6586__auto___7091;
+(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__temp_val__7086_7093);
 
-try{var seq__5542_5549 = cljs.core.seq.call(null,(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[speclj.components.new_characteristic.call(null,"labels section",((function (_STAR_parent_description_STAR__orig_val__5540_5547,_STAR_parent_description_STAR__temp_val__5541_5548,description__5041__auto___5546){
+try{var seq__7087_7094 = cljs.core.seq.call(null,(new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[speclj.components.new_characteristic.call(null,"labels section",((function (_STAR_parent_description_STAR__orig_val__7085_7092,_STAR_parent_description_STAR__temp_val__7086_7093,description__6586__auto___7091){
 return (function (){
 var menu = ttt.components.radio_menu.call(null,new cljs.core.Keyword(null,"set-id","set-id",675256473),cljs.core.PersistentVector.EMPTY);
-var expected__5225__auto___5553 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.Keyword(null,"set-id","set-id",675256473)], null);
-var actual__5226__auto___5554 = menu;
-if((actual__5226__auto___5554 == null)){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5553 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5553)),speclj.platform.endl,"to be in: nil"].join('')));
+var expected__6770__auto___7098 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"label","label",1718410804),new cljs.core.Keyword(null,"set-id","set-id",675256473)], null);
+var actual__6771__auto___7099 = menu;
+if((actual__6771__auto___7099 == null)){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7098 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7098)),speclj.platform.endl,"to be in: nil"].join('')));
 } else {
-if(((typeof expected__5225__auto___5553 === 'string') && (typeof actual__5226__auto___5554 === 'string'))){
-if(cljs.core._EQ_.call(null,(-1),actual__5226__auto___5554.indexOf(expected__5225__auto___5553))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5553 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5553)),speclj.platform.endl,"to be in: ",(((actual__5226__auto___5554 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5554))," (using .contains)"].join('')));
-} else {
-}
-} else {
-if(((speclj.platform.re_QMARK_.call(null,expected__5225__auto___5553)) && (typeof actual__5226__auto___5554 === 'string'))){
-if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__5225__auto___5553,actual__5226__auto___5554))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__5226__auto___5554 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5554)),speclj.platform.endl,"to match: ",(((expected__5225__auto___5553 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5553))," (using re-seq)"].join('')));
+if(((typeof expected__6770__auto___7098 === 'string') && (typeof actual__6771__auto___7099 === 'string'))){
+if(cljs.core._EQ_.call(null,(-1),actual__6771__auto___7099.indexOf(expected__6770__auto___7098))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7098 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7098)),speclj.platform.endl,"to be in: ",(((actual__6771__auto___7099 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7099))," (using .contains)"].join('')));
 } else {
 }
 } else {
-if(cljs.core.map_QMARK_.call(null,actual__5226__auto___5554)){
-if((!(cljs.core.contains_QMARK_.call(null,actual__5226__auto___5554,expected__5225__auto___5553)))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5553 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5553)),speclj.platform.endl,"to be a key in: ",(((actual__5226__auto___5554 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5554))," (using contains?)"].join('')));
+if(((speclj.platform.re_QMARK_.call(null,expected__6770__auto___7098)) && (typeof actual__6771__auto___7099 === 'string'))){
+if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__6770__auto___7098,actual__6771__auto___7099))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__6771__auto___7099 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7099)),speclj.platform.endl,"to match: ",(((expected__6770__auto___7098 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7098))," (using re-seq)"].join('')));
 } else {
 }
 } else {
-if(cljs.core.coll_QMARK_.call(null,actual__5226__auto___5554)){
-if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__5224__5227__auto__){
-return cljs.core._EQ_.call(null,expected__5225__auto___5553,p1__5224__5227__auto__);
-}),actual__5226__auto___5554))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5553 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5553)),speclj.platform.endl,"to be in: ",(((actual__5226__auto___5554 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5554))," (using =)"].join('')));
+if(cljs.core.map_QMARK_.call(null,actual__6771__auto___7099)){
+if((!(cljs.core.contains_QMARK_.call(null,actual__6771__auto___7099,expected__6770__auto___7098)))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7098 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7098)),speclj.platform.endl,"to be a key in: ",(((actual__6771__auto___7099 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7099))," (using contains?)"].join('')));
 } else {
 }
 } else {
-throw (new Error((function (){var type_a__5155__auto__ = (((expected__5225__auto___5553 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__5225__auto___5553)));
-var type_b__5156__auto__ = (((actual__5226__auto___5554 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__5226__auto___5554)));
-return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__5155__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__5156__auto__),"]"].join('');
+if(cljs.core.coll_QMARK_.call(null,actual__6771__auto___7099)){
+if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__6769__6772__auto__){
+return cljs.core._EQ_.call(null,expected__6770__auto___7098,p1__6769__6772__auto__);
+}),actual__6771__auto___7099))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7098 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7098)),speclj.platform.endl,"to be in: ",(((actual__6771__auto___7099 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7099))," (using =)"].join('')));
+} else {
+}
+} else {
+throw (new Error((function (){var type_a__6700__auto__ = (((expected__6770__auto___7098 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__6770__auto___7098)));
+var type_b__6701__auto__ = (((actual__6771__auto___7099 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__6771__auto___7099)));
+return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__6700__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__6701__auto__),"]"].join('');
 })()));
 
 }
@@ -184,44 +184,44 @@ return ["should-contain"," doesn't know how to handle these types: [",cljs.core.
 }
 }
 
-var expected__5225__auto__ = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"br","br",934104792)], null);
-var actual__5226__auto__ = menu;
-if((actual__5226__auto__ == null)){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: nil"].join('')));
+var expected__6770__auto__ = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"br","br",934104792)], null);
+var actual__6771__auto__ = menu;
+if((actual__6771__auto__ == null)){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: nil"].join('')));
 } else {
-if(((typeof expected__5225__auto__ === 'string') && (typeof actual__5226__auto__ === 'string'))){
-if(cljs.core._EQ_.call(null,(-1),actual__5226__auto__.indexOf(expected__5225__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using .contains)"].join('')));
-} else {
-return null;
-}
-} else {
-if(((speclj.platform.re_QMARK_.call(null,expected__5225__auto__)) && (typeof actual__5226__auto__ === 'string'))){
-if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__5225__auto__,actual__5226__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__)),speclj.platform.endl,"to match: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__))," (using re-seq)"].join('')));
+if(((typeof expected__6770__auto__ === 'string') && (typeof actual__6771__auto__ === 'string'))){
+if(cljs.core._EQ_.call(null,(-1),actual__6771__auto__.indexOf(expected__6770__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using .contains)"].join('')));
 } else {
 return null;
 }
 } else {
-if(cljs.core.map_QMARK_.call(null,actual__5226__auto__)){
-if((!(cljs.core.contains_QMARK_.call(null,actual__5226__auto__,expected__5225__auto__)))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be a key in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using contains?)"].join('')));
+if(((speclj.platform.re_QMARK_.call(null,expected__6770__auto__)) && (typeof actual__6771__auto__ === 'string'))){
+if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__6770__auto__,actual__6771__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__)),speclj.platform.endl,"to match: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__))," (using re-seq)"].join('')));
 } else {
 return null;
 }
 } else {
-if(cljs.core.coll_QMARK_.call(null,actual__5226__auto__)){
-if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__5224__5227__auto__){
-return cljs.core._EQ_.call(null,expected__5225__auto__,p1__5224__5227__auto__);
-}),actual__5226__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using =)"].join('')));
+if(cljs.core.map_QMARK_.call(null,actual__6771__auto__)){
+if((!(cljs.core.contains_QMARK_.call(null,actual__6771__auto__,expected__6770__auto__)))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be a key in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using contains?)"].join('')));
 } else {
 return null;
 }
 } else {
-throw (new Error((function (){var type_a__5155__auto__ = (((expected__5225__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__5225__auto__)));
-var type_b__5156__auto__ = (((actual__5226__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__5226__auto__)));
-return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__5155__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__5156__auto__),"]"].join('');
+if(cljs.core.coll_QMARK_.call(null,actual__6771__auto__)){
+if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__6769__6772__auto__){
+return cljs.core._EQ_.call(null,expected__6770__auto__,p1__6769__6772__auto__);
+}),actual__6771__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using =)"].join('')));
+} else {
+return null;
+}
+} else {
+throw (new Error((function (){var type_a__6700__auto__ = (((expected__6770__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__6770__auto__)));
+var type_b__6701__auto__ = (((actual__6771__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__6771__auto__)));
+return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__6700__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__6701__auto__),"]"].join('');
 })()));
 
 }
@@ -229,44 +229,44 @@ return ["should-contain"," doesn't know how to handle these types: [",cljs.core.
 }
 }
 }
-});})(_STAR_parent_description_STAR__orig_val__5540_5547,_STAR_parent_description_STAR__temp_val__5541_5548,description__5041__auto___5546))
-,false),speclj.components.new_characteristic.call(null,"sets value and name for option",((function (_STAR_parent_description_STAR__orig_val__5540_5547,_STAR_parent_description_STAR__temp_val__5541_5548,description__5041__auto___5546){
+});})(_STAR_parent_description_STAR__orig_val__7085_7092,_STAR_parent_description_STAR__temp_val__7086_7093,description__6586__auto___7091))
+,false),speclj.components.new_characteristic.call(null,"sets value and name for option",((function (_STAR_parent_description_STAR__orig_val__7085_7092,_STAR_parent_description_STAR__temp_val__7086_7093,description__6586__auto___7091){
 return (function (){
 var menu = ttt.components.radio_menu.call(null,new cljs.core.Keyword(null,"set-id","set-id",675256473),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"opt1","opt1",-577916500)], null));
-var expected__5225__auto___5555 = new cljs.core.Keyword(null,"fieldset","fieldset",-1949770816);
-var actual__5226__auto___5556 = menu;
-if((actual__5226__auto___5556 == null)){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5555 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5555)),speclj.platform.endl,"to be in: nil"].join('')));
+var expected__6770__auto___7100 = new cljs.core.Keyword(null,"fieldset","fieldset",-1949770816);
+var actual__6771__auto___7101 = menu;
+if((actual__6771__auto___7101 == null)){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7100 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7100)),speclj.platform.endl,"to be in: nil"].join('')));
 } else {
-if(((typeof expected__5225__auto___5555 === 'string') && (typeof actual__5226__auto___5556 === 'string'))){
-if(cljs.core._EQ_.call(null,(-1),actual__5226__auto___5556.indexOf(expected__5225__auto___5555))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5555 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5555)),speclj.platform.endl,"to be in: ",(((actual__5226__auto___5556 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5556))," (using .contains)"].join('')));
-} else {
-}
-} else {
-if(((speclj.platform.re_QMARK_.call(null,expected__5225__auto___5555)) && (typeof actual__5226__auto___5556 === 'string'))){
-if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__5225__auto___5555,actual__5226__auto___5556))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__5226__auto___5556 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5556)),speclj.platform.endl,"to match: ",(((expected__5225__auto___5555 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5555))," (using re-seq)"].join('')));
+if(((typeof expected__6770__auto___7100 === 'string') && (typeof actual__6771__auto___7101 === 'string'))){
+if(cljs.core._EQ_.call(null,(-1),actual__6771__auto___7101.indexOf(expected__6770__auto___7100))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7100 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7100)),speclj.platform.endl,"to be in: ",(((actual__6771__auto___7101 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7101))," (using .contains)"].join('')));
 } else {
 }
 } else {
-if(cljs.core.map_QMARK_.call(null,actual__5226__auto___5556)){
-if((!(cljs.core.contains_QMARK_.call(null,actual__5226__auto___5556,expected__5225__auto___5555)))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5555 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5555)),speclj.platform.endl,"to be a key in: ",(((actual__5226__auto___5556 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5556))," (using contains?)"].join('')));
+if(((speclj.platform.re_QMARK_.call(null,expected__6770__auto___7100)) && (typeof actual__6771__auto___7101 === 'string'))){
+if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__6770__auto___7100,actual__6771__auto___7101))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__6771__auto___7101 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7101)),speclj.platform.endl,"to match: ",(((expected__6770__auto___7100 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7100))," (using re-seq)"].join('')));
 } else {
 }
 } else {
-if(cljs.core.coll_QMARK_.call(null,actual__5226__auto___5556)){
-if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__5224__5227__auto__){
-return cljs.core._EQ_.call(null,expected__5225__auto___5555,p1__5224__5227__auto__);
-}),actual__5226__auto___5556))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5555 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5555)),speclj.platform.endl,"to be in: ",(((actual__5226__auto___5556 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5556))," (using =)"].join('')));
+if(cljs.core.map_QMARK_.call(null,actual__6771__auto___7101)){
+if((!(cljs.core.contains_QMARK_.call(null,actual__6771__auto___7101,expected__6770__auto___7100)))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7100 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7100)),speclj.platform.endl,"to be a key in: ",(((actual__6771__auto___7101 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7101))," (using contains?)"].join('')));
 } else {
 }
 } else {
-throw (new Error((function (){var type_a__5155__auto__ = (((expected__5225__auto___5555 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__5225__auto___5555)));
-var type_b__5156__auto__ = (((actual__5226__auto___5556 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__5226__auto___5556)));
-return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__5155__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__5156__auto__),"]"].join('');
+if(cljs.core.coll_QMARK_.call(null,actual__6771__auto___7101)){
+if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__6769__6772__auto__){
+return cljs.core._EQ_.call(null,expected__6770__auto___7100,p1__6769__6772__auto__);
+}),actual__6771__auto___7101))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7100 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7100)),speclj.platform.endl,"to be in: ",(((actual__6771__auto___7101 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7101))," (using =)"].join('')));
+} else {
+}
+} else {
+throw (new Error((function (){var type_a__6700__auto__ = (((expected__6770__auto___7100 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__6770__auto___7100)));
+var type_b__6701__auto__ = (((actual__6771__auto___7101 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__6771__auto___7101)));
+return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__6700__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__6701__auto__),"]"].join('');
 })()));
 
 }
@@ -275,40 +275,40 @@ return ["should-contain"," doesn't know how to handle these types: [",cljs.core.
 }
 }
 
-var expected__5225__auto___5557 = new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"id","id",-1388402092),new cljs.core.Keyword(null,"set-id","set-id",675256473)], null);
-var actual__5226__auto___5558 = menu;
-if((actual__5226__auto___5558 == null)){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5557 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5557)),speclj.platform.endl,"to be in: nil"].join('')));
+var expected__6770__auto___7102 = new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"id","id",-1388402092),new cljs.core.Keyword(null,"set-id","set-id",675256473)], null);
+var actual__6771__auto___7103 = menu;
+if((actual__6771__auto___7103 == null)){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7102 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7102)),speclj.platform.endl,"to be in: nil"].join('')));
 } else {
-if(((typeof expected__5225__auto___5557 === 'string') && (typeof actual__5226__auto___5558 === 'string'))){
-if(cljs.core._EQ_.call(null,(-1),actual__5226__auto___5558.indexOf(expected__5225__auto___5557))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5557 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5557)),speclj.platform.endl,"to be in: ",(((actual__5226__auto___5558 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5558))," (using .contains)"].join('')));
-} else {
-}
-} else {
-if(((speclj.platform.re_QMARK_.call(null,expected__5225__auto___5557)) && (typeof actual__5226__auto___5558 === 'string'))){
-if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__5225__auto___5557,actual__5226__auto___5558))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__5226__auto___5558 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5558)),speclj.platform.endl,"to match: ",(((expected__5225__auto___5557 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5557))," (using re-seq)"].join('')));
+if(((typeof expected__6770__auto___7102 === 'string') && (typeof actual__6771__auto___7103 === 'string'))){
+if(cljs.core._EQ_.call(null,(-1),actual__6771__auto___7103.indexOf(expected__6770__auto___7102))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7102 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7102)),speclj.platform.endl,"to be in: ",(((actual__6771__auto___7103 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7103))," (using .contains)"].join('')));
 } else {
 }
 } else {
-if(cljs.core.map_QMARK_.call(null,actual__5226__auto___5558)){
-if((!(cljs.core.contains_QMARK_.call(null,actual__5226__auto___5558,expected__5225__auto___5557)))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5557 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5557)),speclj.platform.endl,"to be a key in: ",(((actual__5226__auto___5558 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5558))," (using contains?)"].join('')));
+if(((speclj.platform.re_QMARK_.call(null,expected__6770__auto___7102)) && (typeof actual__6771__auto___7103 === 'string'))){
+if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__6770__auto___7102,actual__6771__auto___7103))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__6771__auto___7103 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7103)),speclj.platform.endl,"to match: ",(((expected__6770__auto___7102 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7102))," (using re-seq)"].join('')));
 } else {
 }
 } else {
-if(cljs.core.coll_QMARK_.call(null,actual__5226__auto___5558)){
-if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__5224__5227__auto__){
-return cljs.core._EQ_.call(null,expected__5225__auto___5557,p1__5224__5227__auto__);
-}),actual__5226__auto___5558))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5557 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5557)),speclj.platform.endl,"to be in: ",(((actual__5226__auto___5558 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5558))," (using =)"].join('')));
+if(cljs.core.map_QMARK_.call(null,actual__6771__auto___7103)){
+if((!(cljs.core.contains_QMARK_.call(null,actual__6771__auto___7103,expected__6770__auto___7102)))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7102 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7102)),speclj.platform.endl,"to be a key in: ",(((actual__6771__auto___7103 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7103))," (using contains?)"].join('')));
 } else {
 }
 } else {
-throw (new Error((function (){var type_a__5155__auto__ = (((expected__5225__auto___5557 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__5225__auto___5557)));
-var type_b__5156__auto__ = (((actual__5226__auto___5558 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__5226__auto___5558)));
-return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__5155__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__5156__auto__),"]"].join('');
+if(cljs.core.coll_QMARK_.call(null,actual__6771__auto___7103)){
+if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__6769__6772__auto__){
+return cljs.core._EQ_.call(null,expected__6770__auto___7102,p1__6769__6772__auto__);
+}),actual__6771__auto___7103))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7102 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7102)),speclj.platform.endl,"to be in: ",(((actual__6771__auto___7103 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7103))," (using =)"].join('')));
+} else {
+}
+} else {
+throw (new Error((function (){var type_a__6700__auto__ = (((expected__6770__auto___7102 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__6770__auto___7102)));
+var type_b__6701__auto__ = (((actual__6771__auto___7103 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__6771__auto___7103)));
+return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__6700__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__6701__auto__),"]"].join('');
 })()));
 
 }
@@ -317,40 +317,40 @@ return ["should-contain"," doesn't know how to handle these types: [",cljs.core.
 }
 }
 
-var expected__5225__auto___5559 = "opt1";
-var actual__5226__auto___5560 = cljs.core.last.call(null,menu);
-if((actual__5226__auto___5560 == null)){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5559 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5559)),speclj.platform.endl,"to be in: nil"].join('')));
+var expected__6770__auto___7104 = "opt1";
+var actual__6771__auto___7105 = cljs.core.last.call(null,menu);
+if((actual__6771__auto___7105 == null)){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7104 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7104)),speclj.platform.endl,"to be in: nil"].join('')));
 } else {
-if(((typeof expected__5225__auto___5559 === 'string') && (typeof actual__5226__auto___5560 === 'string'))){
-if(cljs.core._EQ_.call(null,(-1),actual__5226__auto___5560.indexOf(expected__5225__auto___5559))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5559 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5559)),speclj.platform.endl,"to be in: ",(((actual__5226__auto___5560 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5560))," (using .contains)"].join('')));
-} else {
-}
-} else {
-if(((speclj.platform.re_QMARK_.call(null,expected__5225__auto___5559)) && (typeof actual__5226__auto___5560 === 'string'))){
-if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__5225__auto___5559,actual__5226__auto___5560))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__5226__auto___5560 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5560)),speclj.platform.endl,"to match: ",(((expected__5225__auto___5559 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5559))," (using re-seq)"].join('')));
+if(((typeof expected__6770__auto___7104 === 'string') && (typeof actual__6771__auto___7105 === 'string'))){
+if(cljs.core._EQ_.call(null,(-1),actual__6771__auto___7105.indexOf(expected__6770__auto___7104))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7104 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7104)),speclj.platform.endl,"to be in: ",(((actual__6771__auto___7105 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7105))," (using .contains)"].join('')));
 } else {
 }
 } else {
-if(cljs.core.map_QMARK_.call(null,actual__5226__auto___5560)){
-if((!(cljs.core.contains_QMARK_.call(null,actual__5226__auto___5560,expected__5225__auto___5559)))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5559 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5559)),speclj.platform.endl,"to be a key in: ",(((actual__5226__auto___5560 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5560))," (using contains?)"].join('')));
+if(((speclj.platform.re_QMARK_.call(null,expected__6770__auto___7104)) && (typeof actual__6771__auto___7105 === 'string'))){
+if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__6770__auto___7104,actual__6771__auto___7105))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__6771__auto___7105 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7105)),speclj.platform.endl,"to match: ",(((expected__6770__auto___7104 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7104))," (using re-seq)"].join('')));
 } else {
 }
 } else {
-if(cljs.core.coll_QMARK_.call(null,actual__5226__auto___5560)){
-if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__5224__5227__auto__){
-return cljs.core._EQ_.call(null,expected__5225__auto___5559,p1__5224__5227__auto__);
-}),actual__5226__auto___5560))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto___5559 == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto___5559)),speclj.platform.endl,"to be in: ",(((actual__5226__auto___5560 == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto___5560))," (using =)"].join('')));
+if(cljs.core.map_QMARK_.call(null,actual__6771__auto___7105)){
+if((!(cljs.core.contains_QMARK_.call(null,actual__6771__auto___7105,expected__6770__auto___7104)))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7104 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7104)),speclj.platform.endl,"to be a key in: ",(((actual__6771__auto___7105 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7105))," (using contains?)"].join('')));
 } else {
 }
 } else {
-throw (new Error((function (){var type_a__5155__auto__ = (((expected__5225__auto___5559 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__5225__auto___5559)));
-var type_b__5156__auto__ = (((actual__5226__auto___5560 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__5226__auto___5560)));
-return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__5155__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__5156__auto__),"]"].join('');
+if(cljs.core.coll_QMARK_.call(null,actual__6771__auto___7105)){
+if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__6769__6772__auto__){
+return cljs.core._EQ_.call(null,expected__6770__auto___7104,p1__6769__6772__auto__);
+}),actual__6771__auto___7105))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto___7104 == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto___7104)),speclj.platform.endl,"to be in: ",(((actual__6771__auto___7105 == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto___7105))," (using =)"].join('')));
+} else {
+}
+} else {
+throw (new Error((function (){var type_a__6700__auto__ = (((expected__6770__auto___7104 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__6770__auto___7104)));
+var type_b__6701__auto__ = (((actual__6771__auto___7105 == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__6771__auto___7105)));
+return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__6700__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__6701__auto__),"]"].join('');
 })()));
 
 }
@@ -359,44 +359,44 @@ return ["should-contain"," doesn't know how to handle these types: [",cljs.core.
 }
 }
 
-var expected__5225__auto__ = new cljs.core.Keyword(null,"input","input",556931961);
-var actual__5226__auto__ = cljs.core.first.call(null,cljs.core.last.call(null,menu));
-if((actual__5226__auto__ == null)){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: nil"].join('')));
+var expected__6770__auto__ = new cljs.core.Keyword(null,"input","input",556931961);
+var actual__6771__auto__ = cljs.core.first.call(null,cljs.core.last.call(null,menu));
+if((actual__6771__auto__ == null)){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: nil"].join('')));
 } else {
-if(((typeof expected__5225__auto__ === 'string') && (typeof actual__5226__auto__ === 'string'))){
-if(cljs.core._EQ_.call(null,(-1),actual__5226__auto__.indexOf(expected__5225__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using .contains)"].join('')));
-} else {
-return null;
-}
-} else {
-if(((speclj.platform.re_QMARK_.call(null,expected__5225__auto__)) && (typeof actual__5226__auto__ === 'string'))){
-if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__5225__auto__,actual__5226__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__)),speclj.platform.endl,"to match: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__))," (using re-seq)"].join('')));
+if(((typeof expected__6770__auto__ === 'string') && (typeof actual__6771__auto__ === 'string'))){
+if(cljs.core._EQ_.call(null,(-1),actual__6771__auto__.indexOf(expected__6770__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using .contains)"].join('')));
 } else {
 return null;
 }
 } else {
-if(cljs.core.map_QMARK_.call(null,actual__5226__auto__)){
-if((!(cljs.core.contains_QMARK_.call(null,actual__5226__auto__,expected__5225__auto__)))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be a key in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using contains?)"].join('')));
+if(((speclj.platform.re_QMARK_.call(null,expected__6770__auto__)) && (typeof actual__6771__auto__ === 'string'))){
+if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__6770__auto__,actual__6771__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__)),speclj.platform.endl,"to match: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__))," (using re-seq)"].join('')));
 } else {
 return null;
 }
 } else {
-if(cljs.core.coll_QMARK_.call(null,actual__5226__auto__)){
-if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__5224__5227__auto__){
-return cljs.core._EQ_.call(null,expected__5225__auto__,p1__5224__5227__auto__);
-}),actual__5226__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using =)"].join('')));
+if(cljs.core.map_QMARK_.call(null,actual__6771__auto__)){
+if((!(cljs.core.contains_QMARK_.call(null,actual__6771__auto__,expected__6770__auto__)))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be a key in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using contains?)"].join('')));
 } else {
 return null;
 }
 } else {
-throw (new Error((function (){var type_a__5155__auto__ = (((expected__5225__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__5225__auto__)));
-var type_b__5156__auto__ = (((actual__5226__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__5226__auto__)));
-return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__5155__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__5156__auto__),"]"].join('');
+if(cljs.core.coll_QMARK_.call(null,actual__6771__auto__)){
+if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__6769__6772__auto__){
+return cljs.core._EQ_.call(null,expected__6770__auto__,p1__6769__6772__auto__);
+}),actual__6771__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using =)"].join('')));
+} else {
+return null;
+}
+} else {
+throw (new Error((function (){var type_a__6700__auto__ = (((expected__6770__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__6770__auto__)));
+var type_b__6701__auto__ = (((actual__6771__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__6771__auto__)));
+return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__6700__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__6701__auto__),"]"].join('');
 })()));
 
 }
@@ -404,54 +404,54 @@ return ["should-contain"," doesn't know how to handle these types: [",cljs.core.
 }
 }
 }
-});})(_STAR_parent_description_STAR__orig_val__5540_5547,_STAR_parent_description_STAR__temp_val__5541_5548,description__5041__auto___5546))
+});})(_STAR_parent_description_STAR__orig_val__7085_7092,_STAR_parent_description_STAR__temp_val__7086_7093,description__6586__auto___7091))
 ,false)],null)));
-var chunk__5543_5550 = null;
-var count__5544_5551 = (0);
-var i__5545_5552 = (0);
+var chunk__7088_7095 = null;
+var count__7089_7096 = (0);
+var i__7090_7097 = (0);
 while(true){
-if((i__5545_5552 < count__5544_5551)){
-var component__5042__auto___5561 = cljs.core._nth.call(null,chunk__5543_5550,i__5545_5552);
-speclj.components.install.call(null,component__5042__auto___5561,description__5041__auto___5546);
+if((i__7090_7097 < count__7089_7096)){
+var component__6587__auto___7106 = cljs.core._nth.call(null,chunk__7088_7095,i__7090_7097);
+speclj.components.install.call(null,component__6587__auto___7106,description__6586__auto___7091);
 
 
-var G__5562 = seq__5542_5549;
-var G__5563 = chunk__5543_5550;
-var G__5564 = count__5544_5551;
-var G__5565 = (i__5545_5552 + (1));
-seq__5542_5549 = G__5562;
-chunk__5543_5550 = G__5563;
-count__5544_5551 = G__5564;
-i__5545_5552 = G__5565;
+var G__7107 = seq__7087_7094;
+var G__7108 = chunk__7088_7095;
+var G__7109 = count__7089_7096;
+var G__7110 = (i__7090_7097 + (1));
+seq__7087_7094 = G__7107;
+chunk__7088_7095 = G__7108;
+count__7089_7096 = G__7109;
+i__7090_7097 = G__7110;
 continue;
 } else {
-var temp__5804__auto___5566 = cljs.core.seq.call(null,seq__5542_5549);
-if(temp__5804__auto___5566){
-var seq__5542_5567__$1 = temp__5804__auto___5566;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__5542_5567__$1)){
-var c__4556__auto___5568 = cljs.core.chunk_first.call(null,seq__5542_5567__$1);
-var G__5569 = cljs.core.chunk_rest.call(null,seq__5542_5567__$1);
-var G__5570 = c__4556__auto___5568;
-var G__5571 = cljs.core.count.call(null,c__4556__auto___5568);
-var G__5572 = (0);
-seq__5542_5549 = G__5569;
-chunk__5543_5550 = G__5570;
-count__5544_5551 = G__5571;
-i__5545_5552 = G__5572;
+var temp__5804__auto___7111 = cljs.core.seq.call(null,seq__7087_7094);
+if(temp__5804__auto___7111){
+var seq__7087_7112__$1 = temp__5804__auto___7111;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__7087_7112__$1)){
+var c__4556__auto___7113 = cljs.core.chunk_first.call(null,seq__7087_7112__$1);
+var G__7114 = cljs.core.chunk_rest.call(null,seq__7087_7112__$1);
+var G__7115 = c__4556__auto___7113;
+var G__7116 = cljs.core.count.call(null,c__4556__auto___7113);
+var G__7117 = (0);
+seq__7087_7094 = G__7114;
+chunk__7088_7095 = G__7115;
+count__7089_7096 = G__7116;
+i__7090_7097 = G__7117;
 continue;
 } else {
-var component__5042__auto___5573 = cljs.core.first.call(null,seq__5542_5567__$1);
-speclj.components.install.call(null,component__5042__auto___5573,description__5041__auto___5546);
+var component__6587__auto___7118 = cljs.core.first.call(null,seq__7087_7112__$1);
+speclj.components.install.call(null,component__6587__auto___7118,description__6586__auto___7091);
 
 
-var G__5574 = cljs.core.next.call(null,seq__5542_5567__$1);
-var G__5575 = null;
-var G__5576 = (0);
-var G__5577 = (0);
-seq__5542_5549 = G__5574;
-chunk__5543_5550 = G__5575;
-count__5544_5551 = G__5576;
-i__5545_5552 = G__5577;
+var G__7119 = cljs.core.next.call(null,seq__7087_7112__$1);
+var G__7120 = null;
+var G__7121 = (0);
+var G__7122 = (0);
+seq__7087_7094 = G__7119;
+chunk__7088_7095 = G__7120;
+count__7089_7096 = G__7121;
+i__7090_7097 = G__7122;
 continue;
 }
 } else {
@@ -459,76 +459,76 @@ continue;
 }
 break;
 }
-}finally {(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__orig_val__5540_5547);
+}finally {(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__orig_val__7085_7092);
 }
 if(cljs.core.truth_(speclj.config._STAR_parent_description_STAR_)){
 } else {
-speclj.running.submit_description.call(null,speclj.config.active_runner.call(null),description__5041__auto___5546);
+speclj.running.submit_description.call(null,speclj.config.active_runner.call(null),description__6586__auto___7091);
 }
 
-var description__5041__auto___5628 = speclj.components.new_description.call(null,"options-bar component",false,"ttt.core-spec");
-var _STAR_parent_description_STAR__orig_val__5578_5629 = speclj.config._STAR_parent_description_STAR_;
-var _STAR_parent_description_STAR__temp_val__5579_5630 = description__5041__auto___5628;
-(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__temp_val__5579_5630);
+var description__6586__auto___7173 = speclj.components.new_description.call(null,"options-bar component",false,"ttt.core-spec");
+var _STAR_parent_description_STAR__orig_val__7123_7174 = speclj.config._STAR_parent_description_STAR_;
+var _STAR_parent_description_STAR__temp_val__7124_7175 = description__6586__auto___7173;
+(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__temp_val__7124_7175);
 
-try{var seq__5580_5631 = cljs.core.seq.call(null,(new cljs.core.PersistentVector(null,1,(5),cljs.core.PersistentVector.EMPTY_NODE,[(function (){var description__5041__auto____$1 = speclj.components.new_description.call(null,"difficulty section",false,"ttt.core-spec");
-var _STAR_parent_description_STAR__orig_val__5606_5635 = speclj.config._STAR_parent_description_STAR_;
-var _STAR_parent_description_STAR__temp_val__5607_5636 = description__5041__auto____$1;
-(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__temp_val__5607_5636);
+try{var seq__7125_7176 = cljs.core.seq.call(null,(new cljs.core.PersistentVector(null,1,(5),cljs.core.PersistentVector.EMPTY_NODE,[(function (){var description__6586__auto____$1 = speclj.components.new_description.call(null,"difficulty section",false,"ttt.core-spec");
+var _STAR_parent_description_STAR__orig_val__7151_7180 = speclj.config._STAR_parent_description_STAR_;
+var _STAR_parent_description_STAR__temp_val__7152_7181 = description__6586__auto____$1;
+(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__temp_val__7152_7181);
 
-try{var seq__5608_5637 = cljs.core.seq.call(null,(new cljs.core.PersistentVector(null,4,(5),cljs.core.PersistentVector.EMPTY_NODE,[speclj.components.new_around.call(null,((function (_STAR_parent_description_STAR__orig_val__5606_5635,_STAR_parent_description_STAR__temp_val__5607_5636,description__5041__auto____$1,_STAR_parent_description_STAR__orig_val__5578_5629,_STAR_parent_description_STAR__temp_val__5579_5630,description__5041__auto___5628){
-return (function (it__5402__auto__){
-var _STAR_stubbed_invocations_STAR__orig_val__5620 = speclj.stub._STAR_stubbed_invocations_STAR_;
-var _STAR_stubbed_invocations_STAR__temp_val__5621 = cljs.core.atom.call(null,cljs.core.PersistentVector.EMPTY);
-(speclj.stub._STAR_stubbed_invocations_STAR_ = _STAR_stubbed_invocations_STAR__temp_val__5621);
+try{var seq__7153_7182 = cljs.core.seq.call(null,(new cljs.core.PersistentVector(null,4,(5),cljs.core.PersistentVector.EMPTY_NODE,[speclj.components.new_around.call(null,((function (_STAR_parent_description_STAR__orig_val__7151_7180,_STAR_parent_description_STAR__temp_val__7152_7181,description__6586__auto____$1,_STAR_parent_description_STAR__orig_val__7123_7174,_STAR_parent_description_STAR__temp_val__7124_7175,description__6586__auto___7173){
+return (function (it__6947__auto__){
+var _STAR_stubbed_invocations_STAR__orig_val__7165 = speclj.stub._STAR_stubbed_invocations_STAR_;
+var _STAR_stubbed_invocations_STAR__temp_val__7166 = cljs.core.atom.call(null,cljs.core.PersistentVector.EMPTY);
+(speclj.stub._STAR_stubbed_invocations_STAR_ = _STAR_stubbed_invocations_STAR__temp_val__7166);
 
-try{return it__5402__auto__.call(null);
-}finally {(speclj.stub._STAR_stubbed_invocations_STAR_ = _STAR_stubbed_invocations_STAR__orig_val__5620);
-}});})(_STAR_parent_description_STAR__orig_val__5606_5635,_STAR_parent_description_STAR__temp_val__5607_5636,description__5041__auto____$1,_STAR_parent_description_STAR__orig_val__5578_5629,_STAR_parent_description_STAR__temp_val__5579_5630,description__5041__auto___5628))
-),speclj.components.new_characteristic.call(null,"creates radio menu for game modes",((function (_STAR_parent_description_STAR__orig_val__5606_5635,_STAR_parent_description_STAR__temp_val__5607_5636,description__5041__auto____$1,_STAR_parent_description_STAR__orig_val__5578_5629,_STAR_parent_description_STAR__temp_val__5579_5630,description__5041__auto___5628){
+try{return it__6947__auto__.call(null);
+}finally {(speclj.stub._STAR_stubbed_invocations_STAR_ = _STAR_stubbed_invocations_STAR__orig_val__7165);
+}});})(_STAR_parent_description_STAR__orig_val__7151_7180,_STAR_parent_description_STAR__temp_val__7152_7181,description__6586__auto____$1,_STAR_parent_description_STAR__orig_val__7123_7174,_STAR_parent_description_STAR__temp_val__7124_7175,description__6586__auto___7173))
+),speclj.components.new_characteristic.call(null,"creates radio menu for game modes",((function (_STAR_parent_description_STAR__orig_val__7151_7180,_STAR_parent_description_STAR__temp_val__7152_7181,description__6586__auto____$1,_STAR_parent_description_STAR__orig_val__7123_7174,_STAR_parent_description_STAR__temp_val__7124_7175,description__6586__auto___7173){
 return (function (){
-var radio_menu_orig_val__5622 = ttt.components.radio_menu;
-var radio_menu_temp_val__5623 = speclj.stub.stub.call(null,new cljs.core.Keyword(null,"mock-radio-menu","mock-radio-menu",-601059130),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"return","return",-1891502105),"game mode menu"], null));
-(ttt.components.radio_menu = radio_menu_temp_val__5623);
+var radio_menu_orig_val__7167 = ttt.components.radio_menu;
+var radio_menu_temp_val__7168 = speclj.stub.stub.call(null,new cljs.core.Keyword(null,"mock-radio-menu","mock-radio-menu",-601059130),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"return","return",-1891502105),"game mode menu"], null));
+(ttt.components.radio_menu = radio_menu_temp_val__7168);
 
-try{var expected__5225__auto__ = "game mode menu";
-var actual__5226__auto__ = ttt.components.options_bar.call(null);
-if((actual__5226__auto__ == null)){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: nil"].join('')));
+try{var expected__6770__auto__ = "game mode menu";
+var actual__6771__auto__ = ttt.components.options_bar.call(null);
+if((actual__6771__auto__ == null)){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: nil"].join('')));
 } else {
-if(((typeof expected__5225__auto__ === 'string') && (typeof actual__5226__auto__ === 'string'))){
-if(cljs.core._EQ_.call(null,(-1),actual__5226__auto__.indexOf(expected__5225__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using .contains)"].join('')));
-} else {
-return null;
-}
-} else {
-if(((speclj.platform.re_QMARK_.call(null,expected__5225__auto__)) && (typeof actual__5226__auto__ === 'string'))){
-if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__5225__auto__,actual__5226__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__)),speclj.platform.endl,"to match: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__))," (using re-seq)"].join('')));
+if(((typeof expected__6770__auto__ === 'string') && (typeof actual__6771__auto__ === 'string'))){
+if(cljs.core._EQ_.call(null,(-1),actual__6771__auto__.indexOf(expected__6770__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using .contains)"].join('')));
 } else {
 return null;
 }
 } else {
-if(cljs.core.map_QMARK_.call(null,actual__5226__auto__)){
-if((!(cljs.core.contains_QMARK_.call(null,actual__5226__auto__,expected__5225__auto__)))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be a key in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using contains?)"].join('')));
+if(((speclj.platform.re_QMARK_.call(null,expected__6770__auto__)) && (typeof actual__6771__auto__ === 'string'))){
+if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__6770__auto__,actual__6771__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__)),speclj.platform.endl,"to match: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__))," (using re-seq)"].join('')));
 } else {
 return null;
 }
 } else {
-if(cljs.core.coll_QMARK_.call(null,actual__5226__auto__)){
-if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__5224__5227__auto__){
-return cljs.core._EQ_.call(null,expected__5225__auto__,p1__5224__5227__auto__);
-}),actual__5226__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using =)"].join('')));
+if(cljs.core.map_QMARK_.call(null,actual__6771__auto__)){
+if((!(cljs.core.contains_QMARK_.call(null,actual__6771__auto__,expected__6770__auto__)))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be a key in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using contains?)"].join('')));
 } else {
 return null;
 }
 } else {
-throw (new Error((function (){var type_a__5155__auto__ = (((expected__5225__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__5225__auto__)));
-var type_b__5156__auto__ = (((actual__5226__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__5226__auto__)));
-return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__5155__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__5156__auto__),"]"].join('');
+if(cljs.core.coll_QMARK_.call(null,actual__6771__auto__)){
+if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__6769__6772__auto__){
+return cljs.core._EQ_.call(null,expected__6770__auto__,p1__6769__6772__auto__);
+}),actual__6771__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using =)"].join('')));
+} else {
+return null;
+}
+} else {
+throw (new Error((function (){var type_a__6700__auto__ = (((expected__6770__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__6770__auto__)));
+var type_b__6701__auto__ = (((actual__6771__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__6771__auto__)));
+return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__6700__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__6701__auto__),"]"].join('');
 })()));
 
 }
@@ -536,52 +536,52 @@ return ["should-contain"," doesn't know how to handle these types: [",cljs.core.
 }
 }
 }
-}finally {(ttt.components.radio_menu = radio_menu_orig_val__5622);
-}});})(_STAR_parent_description_STAR__orig_val__5606_5635,_STAR_parent_description_STAR__temp_val__5607_5636,description__5041__auto____$1,_STAR_parent_description_STAR__orig_val__5578_5629,_STAR_parent_description_STAR__temp_val__5579_5630,description__5041__auto___5628))
-,false),speclj.components.new_characteristic.call(null,"creates radio menu for difficulty",((function (_STAR_parent_description_STAR__orig_val__5606_5635,_STAR_parent_description_STAR__temp_val__5607_5636,description__5041__auto____$1,_STAR_parent_description_STAR__orig_val__5578_5629,_STAR_parent_description_STAR__temp_val__5579_5630,description__5041__auto___5628){
+}finally {(ttt.components.radio_menu = radio_menu_orig_val__7167);
+}});})(_STAR_parent_description_STAR__orig_val__7151_7180,_STAR_parent_description_STAR__temp_val__7152_7181,description__6586__auto____$1,_STAR_parent_description_STAR__orig_val__7123_7174,_STAR_parent_description_STAR__temp_val__7124_7175,description__6586__auto___7173))
+,false),speclj.components.new_characteristic.call(null,"creates radio menu for difficulty",((function (_STAR_parent_description_STAR__orig_val__7151_7180,_STAR_parent_description_STAR__temp_val__7152_7181,description__6586__auto____$1,_STAR_parent_description_STAR__orig_val__7123_7174,_STAR_parent_description_STAR__temp_val__7124_7175,description__6586__auto___7173){
 return (function (){
-var radio_menu_orig_val__5624 = ttt.components.radio_menu;
-var radio_menu_temp_val__5625 = speclj.stub.stub.call(null,new cljs.core.Keyword(null,"mock-radio-menu","mock-radio-menu",-601059130),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"return","return",-1891502105),"difficulty menu"], null));
-(ttt.components.radio_menu = radio_menu_temp_val__5625);
+var radio_menu_orig_val__7169 = ttt.components.radio_menu;
+var radio_menu_temp_val__7170 = speclj.stub.stub.call(null,new cljs.core.Keyword(null,"mock-radio-menu","mock-radio-menu",-601059130),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"return","return",-1891502105),"difficulty menu"], null));
+(ttt.components.radio_menu = radio_menu_temp_val__7170);
 
-try{var expected__5225__auto__ = "difficulty menu";
-var actual__5226__auto__ = ttt.components.options_bar.call(null);
-if((actual__5226__auto__ == null)){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: nil"].join('')));
+try{var expected__6770__auto__ = "difficulty menu";
+var actual__6771__auto__ = ttt.components.options_bar.call(null);
+if((actual__6771__auto__ == null)){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: nil"].join('')));
 } else {
-if(((typeof expected__5225__auto__ === 'string') && (typeof actual__5226__auto__ === 'string'))){
-if(cljs.core._EQ_.call(null,(-1),actual__5226__auto__.indexOf(expected__5225__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using .contains)"].join('')));
-} else {
-return null;
-}
-} else {
-if(((speclj.platform.re_QMARK_.call(null,expected__5225__auto__)) && (typeof actual__5226__auto__ === 'string'))){
-if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__5225__auto__,actual__5226__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__)),speclj.platform.endl,"to match: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__))," (using re-seq)"].join('')));
+if(((typeof expected__6770__auto__ === 'string') && (typeof actual__6771__auto__ === 'string'))){
+if(cljs.core._EQ_.call(null,(-1),actual__6771__auto__.indexOf(expected__6770__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using .contains)"].join('')));
 } else {
 return null;
 }
 } else {
-if(cljs.core.map_QMARK_.call(null,actual__5226__auto__)){
-if((!(cljs.core.contains_QMARK_.call(null,actual__5226__auto__,expected__5225__auto__)))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be a key in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using contains?)"].join('')));
+if(((speclj.platform.re_QMARK_.call(null,expected__6770__auto__)) && (typeof actual__6771__auto__ === 'string'))){
+if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__6770__auto__,actual__6771__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__)),speclj.platform.endl,"to match: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__))," (using re-seq)"].join('')));
 } else {
 return null;
 }
 } else {
-if(cljs.core.coll_QMARK_.call(null,actual__5226__auto__)){
-if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__5224__5227__auto__){
-return cljs.core._EQ_.call(null,expected__5225__auto__,p1__5224__5227__auto__);
-}),actual__5226__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using =)"].join('')));
+if(cljs.core.map_QMARK_.call(null,actual__6771__auto__)){
+if((!(cljs.core.contains_QMARK_.call(null,actual__6771__auto__,expected__6770__auto__)))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be a key in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using contains?)"].join('')));
 } else {
 return null;
 }
 } else {
-throw (new Error((function (){var type_a__5155__auto__ = (((expected__5225__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__5225__auto__)));
-var type_b__5156__auto__ = (((actual__5226__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__5226__auto__)));
-return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__5155__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__5156__auto__),"]"].join('');
+if(cljs.core.coll_QMARK_.call(null,actual__6771__auto__)){
+if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__6769__6772__auto__){
+return cljs.core._EQ_.call(null,expected__6770__auto__,p1__6769__6772__auto__);
+}),actual__6771__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using =)"].join('')));
+} else {
+return null;
+}
+} else {
+throw (new Error((function (){var type_a__6700__auto__ = (((expected__6770__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__6770__auto__)));
+var type_b__6701__auto__ = (((actual__6771__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__6771__auto__)));
+return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__6700__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__6701__auto__),"]"].join('');
 })()));
 
 }
@@ -589,52 +589,52 @@ return ["should-contain"," doesn't know how to handle these types: [",cljs.core.
 }
 }
 }
-}finally {(ttt.components.radio_menu = radio_menu_orig_val__5624);
-}});})(_STAR_parent_description_STAR__orig_val__5606_5635,_STAR_parent_description_STAR__temp_val__5607_5636,description__5041__auto____$1,_STAR_parent_description_STAR__orig_val__5578_5629,_STAR_parent_description_STAR__temp_val__5579_5630,description__5041__auto___5628))
-,false),speclj.components.new_characteristic.call(null,"creates radio menu for game size",((function (_STAR_parent_description_STAR__orig_val__5606_5635,_STAR_parent_description_STAR__temp_val__5607_5636,description__5041__auto____$1,_STAR_parent_description_STAR__orig_val__5578_5629,_STAR_parent_description_STAR__temp_val__5579_5630,description__5041__auto___5628){
+}finally {(ttt.components.radio_menu = radio_menu_orig_val__7169);
+}});})(_STAR_parent_description_STAR__orig_val__7151_7180,_STAR_parent_description_STAR__temp_val__7152_7181,description__6586__auto____$1,_STAR_parent_description_STAR__orig_val__7123_7174,_STAR_parent_description_STAR__temp_val__7124_7175,description__6586__auto___7173))
+,false),speclj.components.new_characteristic.call(null,"creates radio menu for game size",((function (_STAR_parent_description_STAR__orig_val__7151_7180,_STAR_parent_description_STAR__temp_val__7152_7181,description__6586__auto____$1,_STAR_parent_description_STAR__orig_val__7123_7174,_STAR_parent_description_STAR__temp_val__7124_7175,description__6586__auto___7173){
 return (function (){
-var radio_menu_orig_val__5626 = ttt.components.radio_menu;
-var radio_menu_temp_val__5627 = speclj.stub.stub.call(null,new cljs.core.Keyword(null,"mock-radio-menu","mock-radio-menu",-601059130),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"return","return",-1891502105),"size menu"], null));
-(ttt.components.radio_menu = radio_menu_temp_val__5627);
+var radio_menu_orig_val__7171 = ttt.components.radio_menu;
+var radio_menu_temp_val__7172 = speclj.stub.stub.call(null,new cljs.core.Keyword(null,"mock-radio-menu","mock-radio-menu",-601059130),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"return","return",-1891502105),"size menu"], null));
+(ttt.components.radio_menu = radio_menu_temp_val__7172);
 
-try{var expected__5225__auto__ = "size menu";
-var actual__5226__auto__ = ttt.components.options_bar.call(null);
-if((actual__5226__auto__ == null)){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: nil"].join('')));
+try{var expected__6770__auto__ = "size menu";
+var actual__6771__auto__ = ttt.components.options_bar.call(null);
+if((actual__6771__auto__ == null)){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: nil"].join('')));
 } else {
-if(((typeof expected__5225__auto__ === 'string') && (typeof actual__5226__auto__ === 'string'))){
-if(cljs.core._EQ_.call(null,(-1),actual__5226__auto__.indexOf(expected__5225__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using .contains)"].join('')));
-} else {
-return null;
-}
-} else {
-if(((speclj.platform.re_QMARK_.call(null,expected__5225__auto__)) && (typeof actual__5226__auto__ === 'string'))){
-if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__5225__auto__,actual__5226__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__)),speclj.platform.endl,"to match: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__))," (using re-seq)"].join('')));
+if(((typeof expected__6770__auto__ === 'string') && (typeof actual__6771__auto__ === 'string'))){
+if(cljs.core._EQ_.call(null,(-1),actual__6771__auto__.indexOf(expected__6770__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using .contains)"].join('')));
 } else {
 return null;
 }
 } else {
-if(cljs.core.map_QMARK_.call(null,actual__5226__auto__)){
-if((!(cljs.core.contains_QMARK_.call(null,actual__5226__auto__,expected__5225__auto__)))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be a key in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using contains?)"].join('')));
+if(((speclj.platform.re_QMARK_.call(null,expected__6770__auto__)) && (typeof actual__6771__auto__ === 'string'))){
+if(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__6770__auto__,actual__6771__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__)),speclj.platform.endl,"to match: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__))," (using re-seq)"].join('')));
 } else {
 return null;
 }
 } else {
-if(cljs.core.coll_QMARK_.call(null,actual__5226__auto__)){
-if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__5224__5227__auto__){
-return cljs.core._EQ_.call(null,expected__5225__auto__,p1__5224__5227__auto__);
-}),actual__5226__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5225__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5225__auto__)),speclj.platform.endl,"to be in: ",(((actual__5226__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5226__auto__))," (using =)"].join('')));
+if(cljs.core.map_QMARK_.call(null,actual__6771__auto__)){
+if((!(cljs.core.contains_QMARK_.call(null,actual__6771__auto__,expected__6770__auto__)))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be a key in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using contains?)"].join('')));
 } else {
 return null;
 }
 } else {
-throw (new Error((function (){var type_a__5155__auto__ = (((expected__5225__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__5225__auto__)));
-var type_b__5156__auto__ = (((actual__5226__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__5226__auto__)));
-return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__5155__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__5156__auto__),"]"].join('');
+if(cljs.core.coll_QMARK_.call(null,actual__6771__auto__)){
+if(cljs.core.not.call(null,cljs.core.some.call(null,(function (p1__6769__6772__auto__){
+return cljs.core._EQ_.call(null,expected__6770__auto__,p1__6769__6772__auto__);
+}),actual__6771__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6770__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6770__auto__)),speclj.platform.endl,"to be in: ",(((actual__6771__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6771__auto__))," (using =)"].join('')));
+} else {
+return null;
+}
+} else {
+throw (new Error((function (){var type_a__6700__auto__ = (((expected__6770__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__6770__auto__)));
+var type_b__6701__auto__ = (((actual__6771__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__6771__auto__)));
+return ["should-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__6700__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__6701__auto__),"]"].join('');
 })()));
 
 }
@@ -642,55 +642,55 @@ return ["should-contain"," doesn't know how to handle these types: [",cljs.core.
 }
 }
 }
-}finally {(ttt.components.radio_menu = radio_menu_orig_val__5626);
-}});})(_STAR_parent_description_STAR__orig_val__5606_5635,_STAR_parent_description_STAR__temp_val__5607_5636,description__5041__auto____$1,_STAR_parent_description_STAR__orig_val__5578_5629,_STAR_parent_description_STAR__temp_val__5579_5630,description__5041__auto___5628))
+}finally {(ttt.components.radio_menu = radio_menu_orig_val__7171);
+}});})(_STAR_parent_description_STAR__orig_val__7151_7180,_STAR_parent_description_STAR__temp_val__7152_7181,description__6586__auto____$1,_STAR_parent_description_STAR__orig_val__7123_7174,_STAR_parent_description_STAR__temp_val__7124_7175,description__6586__auto___7173))
 ,false)],null)));
-var chunk__5609_5638 = null;
-var count__5610_5639 = (0);
-var i__5611_5640 = (0);
+var chunk__7154_7183 = null;
+var count__7155_7184 = (0);
+var i__7156_7185 = (0);
 while(true){
-if((i__5611_5640 < count__5610_5639)){
-var component__5042__auto___5641 = cljs.core._nth.call(null,chunk__5609_5638,i__5611_5640);
-speclj.components.install.call(null,component__5042__auto___5641,description__5041__auto____$1);
+if((i__7156_7185 < count__7155_7184)){
+var component__6587__auto___7186 = cljs.core._nth.call(null,chunk__7154_7183,i__7156_7185);
+speclj.components.install.call(null,component__6587__auto___7186,description__6586__auto____$1);
 
 
-var G__5642 = seq__5608_5637;
-var G__5643 = chunk__5609_5638;
-var G__5644 = count__5610_5639;
-var G__5645 = (i__5611_5640 + (1));
-seq__5608_5637 = G__5642;
-chunk__5609_5638 = G__5643;
-count__5610_5639 = G__5644;
-i__5611_5640 = G__5645;
+var G__7187 = seq__7153_7182;
+var G__7188 = chunk__7154_7183;
+var G__7189 = count__7155_7184;
+var G__7190 = (i__7156_7185 + (1));
+seq__7153_7182 = G__7187;
+chunk__7154_7183 = G__7188;
+count__7155_7184 = G__7189;
+i__7156_7185 = G__7190;
 continue;
 } else {
-var temp__5804__auto___5646 = cljs.core.seq.call(null,seq__5608_5637);
-if(temp__5804__auto___5646){
-var seq__5608_5647__$1 = temp__5804__auto___5646;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__5608_5647__$1)){
-var c__4556__auto___5648 = cljs.core.chunk_first.call(null,seq__5608_5647__$1);
-var G__5649 = cljs.core.chunk_rest.call(null,seq__5608_5647__$1);
-var G__5650 = c__4556__auto___5648;
-var G__5651 = cljs.core.count.call(null,c__4556__auto___5648);
-var G__5652 = (0);
-seq__5608_5637 = G__5649;
-chunk__5609_5638 = G__5650;
-count__5610_5639 = G__5651;
-i__5611_5640 = G__5652;
+var temp__5804__auto___7191 = cljs.core.seq.call(null,seq__7153_7182);
+if(temp__5804__auto___7191){
+var seq__7153_7192__$1 = temp__5804__auto___7191;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__7153_7192__$1)){
+var c__4556__auto___7193 = cljs.core.chunk_first.call(null,seq__7153_7192__$1);
+var G__7194 = cljs.core.chunk_rest.call(null,seq__7153_7192__$1);
+var G__7195 = c__4556__auto___7193;
+var G__7196 = cljs.core.count.call(null,c__4556__auto___7193);
+var G__7197 = (0);
+seq__7153_7182 = G__7194;
+chunk__7154_7183 = G__7195;
+count__7155_7184 = G__7196;
+i__7156_7185 = G__7197;
 continue;
 } else {
-var component__5042__auto___5653 = cljs.core.first.call(null,seq__5608_5647__$1);
-speclj.components.install.call(null,component__5042__auto___5653,description__5041__auto____$1);
+var component__6587__auto___7198 = cljs.core.first.call(null,seq__7153_7192__$1);
+speclj.components.install.call(null,component__6587__auto___7198,description__6586__auto____$1);
 
 
-var G__5654 = cljs.core.next.call(null,seq__5608_5647__$1);
-var G__5655 = null;
-var G__5656 = (0);
-var G__5657 = (0);
-seq__5608_5637 = G__5654;
-chunk__5609_5638 = G__5655;
-count__5610_5639 = G__5656;
-i__5611_5640 = G__5657;
+var G__7199 = cljs.core.next.call(null,seq__7153_7192__$1);
+var G__7200 = null;
+var G__7201 = (0);
+var G__7202 = (0);
+seq__7153_7182 = G__7199;
+chunk__7154_7183 = G__7200;
+count__7155_7184 = G__7201;
+i__7156_7185 = G__7202;
 continue;
 }
 } else {
@@ -698,61 +698,61 @@ continue;
 }
 break;
 }
-}finally {(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__orig_val__5606_5635);
+}finally {(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__orig_val__7151_7180);
 }
 if(cljs.core.truth_(speclj.config._STAR_parent_description_STAR_)){
 } else {
-speclj.running.submit_description.call(null,speclj.config.active_runner.call(null),description__5041__auto____$1);
+speclj.running.submit_description.call(null,speclj.config.active_runner.call(null),description__6586__auto____$1);
 }
 
-return description__5041__auto____$1;
+return description__6586__auto____$1;
 })()],null)));
-var chunk__5581_5632 = null;
-var count__5582_5633 = (0);
-var i__5583_5634 = (0);
+var chunk__7126_7177 = null;
+var count__7127_7178 = (0);
+var i__7128_7179 = (0);
 while(true){
-if((i__5583_5634 < count__5582_5633)){
-var component__5042__auto___5658 = cljs.core._nth.call(null,chunk__5581_5632,i__5583_5634);
-speclj.components.install.call(null,component__5042__auto___5658,description__5041__auto___5628);
+if((i__7128_7179 < count__7127_7178)){
+var component__6587__auto___7203 = cljs.core._nth.call(null,chunk__7126_7177,i__7128_7179);
+speclj.components.install.call(null,component__6587__auto___7203,description__6586__auto___7173);
 
 
-var G__5659 = seq__5580_5631;
-var G__5660 = chunk__5581_5632;
-var G__5661 = count__5582_5633;
-var G__5662 = (i__5583_5634 + (1));
-seq__5580_5631 = G__5659;
-chunk__5581_5632 = G__5660;
-count__5582_5633 = G__5661;
-i__5583_5634 = G__5662;
+var G__7204 = seq__7125_7176;
+var G__7205 = chunk__7126_7177;
+var G__7206 = count__7127_7178;
+var G__7207 = (i__7128_7179 + (1));
+seq__7125_7176 = G__7204;
+chunk__7126_7177 = G__7205;
+count__7127_7178 = G__7206;
+i__7128_7179 = G__7207;
 continue;
 } else {
-var temp__5804__auto___5663 = cljs.core.seq.call(null,seq__5580_5631);
-if(temp__5804__auto___5663){
-var seq__5580_5664__$1 = temp__5804__auto___5663;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__5580_5664__$1)){
-var c__4556__auto___5665 = cljs.core.chunk_first.call(null,seq__5580_5664__$1);
-var G__5666 = cljs.core.chunk_rest.call(null,seq__5580_5664__$1);
-var G__5667 = c__4556__auto___5665;
-var G__5668 = cljs.core.count.call(null,c__4556__auto___5665);
-var G__5669 = (0);
-seq__5580_5631 = G__5666;
-chunk__5581_5632 = G__5667;
-count__5582_5633 = G__5668;
-i__5583_5634 = G__5669;
+var temp__5804__auto___7208 = cljs.core.seq.call(null,seq__7125_7176);
+if(temp__5804__auto___7208){
+var seq__7125_7209__$1 = temp__5804__auto___7208;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__7125_7209__$1)){
+var c__4556__auto___7210 = cljs.core.chunk_first.call(null,seq__7125_7209__$1);
+var G__7211 = cljs.core.chunk_rest.call(null,seq__7125_7209__$1);
+var G__7212 = c__4556__auto___7210;
+var G__7213 = cljs.core.count.call(null,c__4556__auto___7210);
+var G__7214 = (0);
+seq__7125_7176 = G__7211;
+chunk__7126_7177 = G__7212;
+count__7127_7178 = G__7213;
+i__7128_7179 = G__7214;
 continue;
 } else {
-var component__5042__auto___5670 = cljs.core.first.call(null,seq__5580_5664__$1);
-speclj.components.install.call(null,component__5042__auto___5670,description__5041__auto___5628);
+var component__6587__auto___7215 = cljs.core.first.call(null,seq__7125_7209__$1);
+speclj.components.install.call(null,component__6587__auto___7215,description__6586__auto___7173);
 
 
-var G__5671 = cljs.core.next.call(null,seq__5580_5664__$1);
-var G__5672 = null;
-var G__5673 = (0);
-var G__5674 = (0);
-seq__5580_5631 = G__5671;
-chunk__5581_5632 = G__5672;
-count__5582_5633 = G__5673;
-i__5583_5634 = G__5674;
+var G__7216 = cljs.core.next.call(null,seq__7125_7209__$1);
+var G__7217 = null;
+var G__7218 = (0);
+var G__7219 = (0);
+seq__7125_7176 = G__7216;
+chunk__7126_7177 = G__7217;
+count__7127_7178 = G__7218;
+i__7128_7179 = G__7219;
 continue;
 }
 } else {
@@ -760,100 +760,100 @@ continue;
 }
 break;
 }
-}finally {(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__orig_val__5578_5629);
+}finally {(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__orig_val__7123_7174);
 }
 if(cljs.core.truth_(speclj.config._STAR_parent_description_STAR_)){
 } else {
-speclj.running.submit_description.call(null,speclj.config.active_runner.call(null),description__5041__auto___5628);
+speclj.running.submit_description.call(null,speclj.config.active_runner.call(null),description__6586__auto___7173);
 }
 
-var description__5041__auto___5683 = speclj.components.new_description.call(null,"game board component",false,"ttt.core-spec");
-var _STAR_parent_description_STAR__orig_val__5677_5684 = speclj.config._STAR_parent_description_STAR_;
-var _STAR_parent_description_STAR__temp_val__5678_5685 = description__5041__auto___5683;
-(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__temp_val__5678_5685);
+var description__6586__auto___7228 = speclj.components.new_description.call(null,"game board component",false,"ttt.core-spec");
+var _STAR_parent_description_STAR__orig_val__7222_7229 = speclj.config._STAR_parent_description_STAR_;
+var _STAR_parent_description_STAR__temp_val__7223_7230 = description__6586__auto___7228;
+(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__temp_val__7223_7230);
 
-try{var seq__5679_5686 = cljs.core.seq.call(null,(new cljs.core.PersistentVector(null,5,(5),cljs.core.PersistentVector.EMPTY_NODE,[speclj.components.new_characteristic.call(null,"indexes each position on board",((function (_STAR_parent_description_STAR__orig_val__5677_5684,_STAR_parent_description_STAR__temp_val__5678_5685,description__5041__auto___5683){
+try{var seq__7224_7231 = cljs.core.seq.call(null,(new cljs.core.PersistentVector(null,5,(5),cljs.core.PersistentVector.EMPTY_NODE,[speclj.components.new_characteristic.call(null,"indexes each position on board",((function (_STAR_parent_description_STAR__orig_val__7222_7229,_STAR_parent_description_STAR__temp_val__7223_7230,description__6586__auto___7228){
 return (function (){
-var expected__5174__auto__ = new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"idx","idx",1053688473),(0),new cljs.core.Keyword(null,"val","val",128701612),null], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"idx","idx",1053688473),(1),new cljs.core.Keyword(null,"val","val",128701612),null], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"idx","idx",1053688473),(2),new cljs.core.Keyword(null,"val","val",128701612),null], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"idx","idx",1053688473),(3),new cljs.core.Keyword(null,"val","val",128701612),null], null)], null);
-var actual__5175__auto__ = ttt.components.idx_board.call(null,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [null,null,null,null], null));
-if(cljs.core._EQ_.call(null,expected__5174__auto__,actual__5175__auto__)){
+var expected__6719__auto__ = new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"idx","idx",1053688473),(0),new cljs.core.Keyword(null,"val","val",128701612),null], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"idx","idx",1053688473),(1),new cljs.core.Keyword(null,"val","val",128701612),null], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"idx","idx",1053688473),(2),new cljs.core.Keyword(null,"val","val",128701612),null], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"idx","idx",1053688473),(3),new cljs.core.Keyword(null,"val","val",128701612),null], null)], null);
+var actual__6720__auto__ = ttt.components.idx_board.call(null,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [null,null,null,null], null));
+if(cljs.core._EQ_.call(null,expected__6719__auto__,actual__6720__auto__)){
 return null;
 } else {
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5174__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5174__auto__)),speclj.platform.endl,"     got: ",(((actual__5175__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5175__auto__))," (using =)"].join('')));
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6719__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6719__auto__)),speclj.platform.endl,"     got: ",(((actual__6720__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6720__auto__))," (using =)"].join('')));
 }
-});})(_STAR_parent_description_STAR__orig_val__5677_5684,_STAR_parent_description_STAR__temp_val__5678_5685,description__5041__auto___5683))
-,false),speclj.components.new_characteristic.call(null,"creates buttons with appropriate id for index",((function (_STAR_parent_description_STAR__orig_val__5677_5684,_STAR_parent_description_STAR__temp_val__5678_5685,description__5041__auto___5683){
+});})(_STAR_parent_description_STAR__orig_val__7222_7229,_STAR_parent_description_STAR__temp_val__7223_7230,description__6586__auto___7228))
+,false),speclj.components.new_characteristic.call(null,"creates buttons with appropriate id for index",((function (_STAR_parent_description_STAR__orig_val__7222_7229,_STAR_parent_description_STAR__temp_val__7223_7230,description__6586__auto___7228){
 return (function (){
 cljs.core.swap_BANG_.call(null,ttt.components.state,cljs.core.assoc,new cljs.core.Keyword(null,"state","state",-1988618099),ttt.util.new_game.call(null));
 
 var buttons = ttt.core_spec.get_by_type.call(null,ttt.components.game_board.call(null),new cljs.core.Keyword(null,"button","button",1456579943));
-var expected__5174__auto__ = new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [(0),(1),(2),(3),(4),(5),(6),(7),(8)], null);
-var actual__5175__auto__ = cljs.core.map.call(null,(function (p1__5675_SHARP_){
-return new cljs.core.Keyword(null,"id","id",-1388402092).cljs$core$IFn$_invoke$arity$1(cljs.core.second.call(null,p1__5675_SHARP_));
+var expected__6719__auto__ = new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, [(0),(1),(2),(3),(4),(5),(6),(7),(8)], null);
+var actual__6720__auto__ = cljs.core.map.call(null,(function (p1__7220_SHARP_){
+return new cljs.core.Keyword(null,"id","id",-1388402092).cljs$core$IFn$_invoke$arity$1(cljs.core.second.call(null,p1__7220_SHARP_));
 }),buttons);
-if(cljs.core._EQ_.call(null,expected__5174__auto__,actual__5175__auto__)){
+if(cljs.core._EQ_.call(null,expected__6719__auto__,actual__6720__auto__)){
 return null;
 } else {
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5174__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5174__auto__)),speclj.platform.endl,"     got: ",(((actual__5175__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5175__auto__))," (using =)"].join('')));
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6719__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6719__auto__)),speclj.platform.endl,"     got: ",(((actual__6720__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6720__auto__))," (using =)"].join('')));
 }
-});})(_STAR_parent_description_STAR__orig_val__5677_5684,_STAR_parent_description_STAR__temp_val__5678_5685,description__5041__auto___5683))
-,false),speclj.components.new_characteristic.call(null,"progresses game state",((function (_STAR_parent_description_STAR__orig_val__5677_5684,_STAR_parent_description_STAR__temp_val__5678_5685,description__5041__auto___5683){
+});})(_STAR_parent_description_STAR__orig_val__7222_7229,_STAR_parent_description_STAR__temp_val__7223_7230,description__6586__auto___7228))
+,false),speclj.components.new_characteristic.call(null,"progresses game state",((function (_STAR_parent_description_STAR__orig_val__7222_7229,_STAR_parent_description_STAR__temp_val__7223_7230,description__6586__auto___7228){
 return (function (){
 cljs.core.swap_BANG_.call(null,ttt.components.state,cljs.core.assoc,new cljs.core.Keyword(null,"state","state",-1988618099),ttt.util.new_game.call(null));
 
 ttt.components.progress_game.call(null,(0));
 
-var expected__5174__auto__ = new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, ["X",null,null,null,null,null,null,null,null], null);
-var actual__5175__auto__ = new cljs.core.Keyword(null,"state","state",-1988618099).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,ttt.components.state));
-if(cljs.core._EQ_.call(null,expected__5174__auto__,actual__5175__auto__)){
+var expected__6719__auto__ = new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, ["X",null,null,null,null,null,null,null,null], null);
+var actual__6720__auto__ = new cljs.core.Keyword(null,"state","state",-1988618099).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,ttt.components.state));
+if(cljs.core._EQ_.call(null,expected__6719__auto__,actual__6720__auto__)){
 return null;
 } else {
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5174__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5174__auto__)),speclj.platform.endl,"     got: ",(((actual__5175__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5175__auto__))," (using =)"].join('')));
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6719__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6719__auto__)),speclj.platform.endl,"     got: ",(((actual__6720__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6720__auto__))," (using =)"].join('')));
 }
-});})(_STAR_parent_description_STAR__orig_val__5677_5684,_STAR_parent_description_STAR__temp_val__5678_5685,description__5041__auto___5683))
-,false),speclj.components.new_characteristic.call(null,"sets on-click event for button click",((function (_STAR_parent_description_STAR__orig_val__5677_5684,_STAR_parent_description_STAR__temp_val__5678_5685,description__5041__auto___5683){
+});})(_STAR_parent_description_STAR__orig_val__7222_7229,_STAR_parent_description_STAR__temp_val__7223_7230,description__6586__auto___7228))
+,false),speclj.components.new_characteristic.call(null,"sets on-click event for button click",((function (_STAR_parent_description_STAR__orig_val__7222_7229,_STAR_parent_description_STAR__temp_val__7223_7230,description__6586__auto___7228){
 return (function (){
 var buttons = ttt.core_spec.get_by_type.call(null,ttt.components.game_board.call(null),new cljs.core.Keyword(null,"button","button",1456579943));
-var expected__5234__auto__ = null;
-var actual__5235__auto__ = cljs.core.map.call(null,(function (p1__5676_SHARP_){
-return new cljs.core.Keyword(null,"on-click","on-click",1632826543).cljs$core$IFn$_invoke$arity$1(cljs.core.second.call(null,p1__5676_SHARP_));
+var expected__6779__auto__ = null;
+var actual__6780__auto__ = cljs.core.map.call(null,(function (p1__7221_SHARP_){
+return new cljs.core.Keyword(null,"on-click","on-click",1632826543).cljs$core$IFn$_invoke$arity$1(cljs.core.second.call(null,p1__7221_SHARP_));
 }),buttons);
-if((actual__5235__auto__ == null)){
+if((actual__6780__auto__ == null)){
 return null;
 } else {
-if(((typeof expected__5234__auto__ === 'string') && (typeof actual__5235__auto__ === 'string'))){
-if((!(cljs.core._EQ_.call(null,(-1),actual__5235__auto__.indexOf(expected__5234__auto__))))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5234__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5234__auto__)),speclj.platform.endl,"not to be in: ",(((actual__5235__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5235__auto__))," (using .contains)"].join('')));
-} else {
-return null;
-}
-} else {
-if(((speclj.platform.re_QMARK_.call(null,expected__5234__auto__)) && (typeof actual__5235__auto__ === 'string'))){
-if((!(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__5234__auto__,actual__5235__auto__))))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__5235__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5235__auto__)),speclj.platform.endl,"not to match: ",(((expected__5234__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5234__auto__))," (using re-seq)"].join('')));
+if(((typeof expected__6779__auto__ === 'string') && (typeof actual__6780__auto__ === 'string'))){
+if((!(cljs.core._EQ_.call(null,(-1),actual__6780__auto__.indexOf(expected__6779__auto__))))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6779__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6779__auto__)),speclj.platform.endl,"not to be in: ",(((actual__6780__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6780__auto__))," (using .contains)"].join('')));
 } else {
 return null;
 }
 } else {
-if(cljs.core.map_QMARK_.call(null,actual__5235__auto__)){
-if(cljs.core.contains_QMARK_.call(null,actual__5235__auto__,expected__5234__auto__)){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5234__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5234__auto__)),speclj.platform.endl,"not to be a key in: ",(((actual__5235__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5235__auto__))," (using contains?)"].join('')));
+if(((speclj.platform.re_QMARK_.call(null,expected__6779__auto__)) && (typeof actual__6780__auto__ === 'string'))){
+if((!(cljs.core.empty_QMARK_.call(null,cljs.core.re_seq.call(null,expected__6779__auto__,actual__6780__auto__))))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((actual__6780__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6780__auto__)),speclj.platform.endl,"not to match: ",(((expected__6779__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6779__auto__))," (using re-seq)"].join('')));
 } else {
 return null;
 }
 } else {
-if(cljs.core.coll_QMARK_.call(null,actual__5235__auto__)){
-if(cljs.core.truth_(cljs.core.some.call(null,(function (p1__5233__5236__auto__){
-return cljs.core._EQ_.call(null,expected__5234__auto__,p1__5233__5236__auto__);
-}),actual__5235__auto__))){
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5234__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5234__auto__)),speclj.platform.endl,"not to be in: ",(((actual__5235__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5235__auto__))," (using =)"].join('')));
+if(cljs.core.map_QMARK_.call(null,actual__6780__auto__)){
+if(cljs.core.contains_QMARK_.call(null,actual__6780__auto__,expected__6779__auto__)){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6779__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6779__auto__)),speclj.platform.endl,"not to be a key in: ",(((actual__6780__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6780__auto__))," (using contains?)"].join('')));
 } else {
 return null;
 }
 } else {
-throw (new Error((function (){var type_a__5155__auto__ = (((expected__5234__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__5234__auto__)));
-var type_b__5156__auto__ = (((actual__5235__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__5235__auto__)));
-return ["should-not-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__5155__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__5156__auto__),"]"].join('');
+if(cljs.core.coll_QMARK_.call(null,actual__6780__auto__)){
+if(cljs.core.truth_(cljs.core.some.call(null,(function (p1__6778__6781__auto__){
+return cljs.core._EQ_.call(null,expected__6779__auto__,p1__6778__6781__auto__);
+}),actual__6780__auto__))){
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6779__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6779__auto__)),speclj.platform.endl,"not to be in: ",(((actual__6780__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6780__auto__))," (using =)"].join('')));
+} else {
+return null;
+}
+} else {
+throw (new Error((function (){var type_a__6700__auto__ = (((expected__6779__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,expected__6779__auto__)));
+var type_b__6701__auto__ = (((actual__6780__auto__ == null))?"nil":speclj.platform.type_name.call(null,cljs.core.type.call(null,actual__6780__auto__)));
+return ["should-not-contain"," doesn't know how to handle these types: [",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_a__6700__auto__)," ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(type_b__6701__auto__),"]"].join('');
 })()));
 
 }
@@ -861,75 +861,75 @@ return ["should-not-contain"," doesn't know how to handle these types: [",cljs.c
 }
 }
 }
-});})(_STAR_parent_description_STAR__orig_val__5677_5684,_STAR_parent_description_STAR__temp_val__5678_5685,description__5041__auto___5683))
-,false),speclj.components.new_characteristic.call(null,"displays game over message when appropriate",((function (_STAR_parent_description_STAR__orig_val__5677_5684,_STAR_parent_description_STAR__temp_val__5678_5685,description__5041__auto___5683){
+});})(_STAR_parent_description_STAR__orig_val__7222_7229,_STAR_parent_description_STAR__temp_val__7223_7230,description__6586__auto___7228))
+,false),speclj.components.new_characteristic.call(null,"displays game over message when appropriate",((function (_STAR_parent_description_STAR__orig_val__7222_7229,_STAR_parent_description_STAR__temp_val__7223_7230,description__6586__auto___7228){
 return (function (){
-var headers_5690 = ttt.core_spec.get_by_type.call(null,ttt.components.game_board.call(null),new cljs.core.Keyword(null,"h2","h2",-372662728));
-var expected__5174__auto___5691 = cljs.core.PersistentVector.EMPTY;
-var actual__5175__auto___5692 = headers_5690;
-if(cljs.core._EQ_.call(null,expected__5174__auto___5691,actual__5175__auto___5692)){
+var headers_7235 = ttt.core_spec.get_by_type.call(null,ttt.components.game_board.call(null),new cljs.core.Keyword(null,"h2","h2",-372662728));
+var expected__6719__auto___7236 = cljs.core.PersistentVector.EMPTY;
+var actual__6720__auto___7237 = headers_7235;
+if(cljs.core._EQ_.call(null,expected__6719__auto___7236,actual__6720__auto___7237)){
 } else {
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5174__auto___5691 == null))?"nil":cljs.core.pr_str.call(null,expected__5174__auto___5691)),speclj.platform.endl,"     got: ",(((actual__5175__auto___5692 == null))?"nil":cljs.core.pr_str.call(null,actual__5175__auto___5692))," (using =)"].join('')));
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6719__auto___7236 == null))?"nil":cljs.core.pr_str.call(null,expected__6719__auto___7236)),speclj.platform.endl,"     got: ",(((actual__6720__auto___7237 == null))?"nil":cljs.core.pr_str.call(null,actual__6720__auto___7237))," (using =)"].join('')));
 }
 
 cljs.core.swap_BANG_.call(null,ttt.components.state,cljs.core.assoc,new cljs.core.Keyword(null,"state","state",-1988618099),new cljs.core.PersistentVector(null, 9, 5, cljs.core.PersistentVector.EMPTY_NODE, ["X","O",null,"X","O",null,"X",null,null], null));
 
 var headers = ttt.core_spec.get_by_type.call(null,ttt.components.game_board.call(null),new cljs.core.Keyword(null,"h2","h2",-372662728));
-var expected__5174__auto__ = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h2","h2",-372662728),"Game over!"], null)], null);
-var actual__5175__auto__ = headers;
-if(cljs.core._EQ_.call(null,expected__5174__auto__,actual__5175__auto__)){
+var expected__6719__auto__ = new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h2","h2",-372662728),"Game over!"], null)], null);
+var actual__6720__auto__ = headers;
+if(cljs.core._EQ_.call(null,expected__6719__auto__,actual__6720__auto__)){
 return null;
 } else {
-throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__5174__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__5174__auto__)),speclj.platform.endl,"     got: ",(((actual__5175__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__5175__auto__))," (using =)"].join('')));
+throw (new speclj.platform.SpecFailure(["Expected: ",(((expected__6719__auto__ == null))?"nil":cljs.core.pr_str.call(null,expected__6719__auto__)),speclj.platform.endl,"     got: ",(((actual__6720__auto__ == null))?"nil":cljs.core.pr_str.call(null,actual__6720__auto__))," (using =)"].join('')));
 }
-});})(_STAR_parent_description_STAR__orig_val__5677_5684,_STAR_parent_description_STAR__temp_val__5678_5685,description__5041__auto___5683))
+});})(_STAR_parent_description_STAR__orig_val__7222_7229,_STAR_parent_description_STAR__temp_val__7223_7230,description__6586__auto___7228))
 ,false)],null)));
-var chunk__5680_5687 = null;
-var count__5681_5688 = (0);
-var i__5682_5689 = (0);
+var chunk__7225_7232 = null;
+var count__7226_7233 = (0);
+var i__7227_7234 = (0);
 while(true){
-if((i__5682_5689 < count__5681_5688)){
-var component__5042__auto___5693 = cljs.core._nth.call(null,chunk__5680_5687,i__5682_5689);
-speclj.components.install.call(null,component__5042__auto___5693,description__5041__auto___5683);
+if((i__7227_7234 < count__7226_7233)){
+var component__6587__auto___7238 = cljs.core._nth.call(null,chunk__7225_7232,i__7227_7234);
+speclj.components.install.call(null,component__6587__auto___7238,description__6586__auto___7228);
 
 
-var G__5694 = seq__5679_5686;
-var G__5695 = chunk__5680_5687;
-var G__5696 = count__5681_5688;
-var G__5697 = (i__5682_5689 + (1));
-seq__5679_5686 = G__5694;
-chunk__5680_5687 = G__5695;
-count__5681_5688 = G__5696;
-i__5682_5689 = G__5697;
+var G__7239 = seq__7224_7231;
+var G__7240 = chunk__7225_7232;
+var G__7241 = count__7226_7233;
+var G__7242 = (i__7227_7234 + (1));
+seq__7224_7231 = G__7239;
+chunk__7225_7232 = G__7240;
+count__7226_7233 = G__7241;
+i__7227_7234 = G__7242;
 continue;
 } else {
-var temp__5804__auto___5698 = cljs.core.seq.call(null,seq__5679_5686);
-if(temp__5804__auto___5698){
-var seq__5679_5699__$1 = temp__5804__auto___5698;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__5679_5699__$1)){
-var c__4556__auto___5700 = cljs.core.chunk_first.call(null,seq__5679_5699__$1);
-var G__5701 = cljs.core.chunk_rest.call(null,seq__5679_5699__$1);
-var G__5702 = c__4556__auto___5700;
-var G__5703 = cljs.core.count.call(null,c__4556__auto___5700);
-var G__5704 = (0);
-seq__5679_5686 = G__5701;
-chunk__5680_5687 = G__5702;
-count__5681_5688 = G__5703;
-i__5682_5689 = G__5704;
+var temp__5804__auto___7243 = cljs.core.seq.call(null,seq__7224_7231);
+if(temp__5804__auto___7243){
+var seq__7224_7244__$1 = temp__5804__auto___7243;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__7224_7244__$1)){
+var c__4556__auto___7245 = cljs.core.chunk_first.call(null,seq__7224_7244__$1);
+var G__7246 = cljs.core.chunk_rest.call(null,seq__7224_7244__$1);
+var G__7247 = c__4556__auto___7245;
+var G__7248 = cljs.core.count.call(null,c__4556__auto___7245);
+var G__7249 = (0);
+seq__7224_7231 = G__7246;
+chunk__7225_7232 = G__7247;
+count__7226_7233 = G__7248;
+i__7227_7234 = G__7249;
 continue;
 } else {
-var component__5042__auto___5705 = cljs.core.first.call(null,seq__5679_5699__$1);
-speclj.components.install.call(null,component__5042__auto___5705,description__5041__auto___5683);
+var component__6587__auto___7250 = cljs.core.first.call(null,seq__7224_7244__$1);
+speclj.components.install.call(null,component__6587__auto___7250,description__6586__auto___7228);
 
 
-var G__5706 = cljs.core.next.call(null,seq__5679_5699__$1);
-var G__5707 = null;
-var G__5708 = (0);
-var G__5709 = (0);
-seq__5679_5686 = G__5706;
-chunk__5680_5687 = G__5707;
-count__5681_5688 = G__5708;
-i__5682_5689 = G__5709;
+var G__7251 = cljs.core.next.call(null,seq__7224_7244__$1);
+var G__7252 = null;
+var G__7253 = (0);
+var G__7254 = (0);
+seq__7224_7231 = G__7251;
+chunk__7225_7232 = G__7252;
+count__7226_7233 = G__7253;
+i__7227_7234 = G__7254;
 continue;
 }
 } else {
@@ -937,11 +937,11 @@ continue;
 }
 break;
 }
-}finally {(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__orig_val__5677_5684);
+}finally {(speclj.config._STAR_parent_description_STAR_ = _STAR_parent_description_STAR__orig_val__7222_7229);
 }
 if(cljs.core.truth_(speclj.config._STAR_parent_description_STAR_)){
 } else {
-speclj.running.submit_description.call(null,speclj.config.active_runner.call(null),description__5041__auto___5683);
+speclj.running.submit_description.call(null,speclj.config.active_runner.call(null),description__6586__auto___7228);
 }
 
 
