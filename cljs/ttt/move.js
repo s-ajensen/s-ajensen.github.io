@@ -123,6 +123,7 @@ return (ttt.move.minimax.cljs$core$IFn$_invoke$arity$3 ? ttt.move.minimax.cljs$c
 }
 }
 });
+ttt.move.minimax = cljs.core.memoize(ttt.move.minimax);
 ttt.move.full_depth = (10);
 ttt.move.performant_depth = (4);
 ttt.move.get_depth = (function ttt$move$get_depth(board){
@@ -148,16 +149,22 @@ return difficulty;
 }
 ttt.move.next_move.cljs$core$IMultiFn$_add_method$arity$3(null,cljs.core.cst$kw$default,(function (_,board){
 return cljs.core.apply.cljs$core$IFn$_invoke$arity$3(cljs.core.max_key,(function (p1__7925_SHARP_){
-return ttt.move.minimax(p1__7925_SHARP_,ttt.move.get_depth(board),true);
+var G__7926 = p1__7925_SHARP_;
+var G__7927 = ttt.move.get_depth(board);
+var G__7928 = true;
+return (ttt.move.minimax.cljs$core$IFn$_invoke$arity$3 ? ttt.move.minimax.cljs$core$IFn$_invoke$arity$3(G__7926,G__7927,G__7928) : ttt.move.minimax.call(null,G__7926,G__7927,G__7928));
 }),ttt.move.possible_moves(board));
 }));
 ttt.move.next_move.cljs$core$IMultiFn$_add_method$arity$3(null,cljs.core.cst$kw$easy,(function (_,board){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$3(cljs.core.min_key,(function (p1__7926_SHARP_){
-return ttt.move.minimax(p1__7926_SHARP_,ttt.move.get_depth(board),true);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$3(cljs.core.min_key,(function (p1__7929_SHARP_){
+var G__7930 = p1__7929_SHARP_;
+var G__7931 = ttt.move.get_depth(board);
+var G__7932 = true;
+return (ttt.move.minimax.cljs$core$IFn$_invoke$arity$3 ? ttt.move.minimax.cljs$core$IFn$_invoke$arity$3(G__7930,G__7931,G__7932) : ttt.move.minimax.call(null,G__7930,G__7931,G__7932));
 }),ttt.move.possible_moves(board));
 }));
 ttt.move.next_move.cljs$core$IMultiFn$_add_method$arity$3(null,cljs.core.cst$kw$med,(function (_,board){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$3(cljs.core.max_key,(function (p1__7927_SHARP_){
-return ttt.move.minimax(p1__7927_SHARP_,(2),true);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$3(cljs.core.max_key,(function (p1__7933_SHARP_){
+return (ttt.move.minimax.cljs$core$IFn$_invoke$arity$3 ? ttt.move.minimax.cljs$core$IFn$_invoke$arity$3(p1__7933_SHARP_,(2),true) : ttt.move.minimax.call(null,p1__7933_SHARP_,(2),true));
 }),ttt.move.possible_moves(board));
 }));
