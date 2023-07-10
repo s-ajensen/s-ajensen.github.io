@@ -41,12 +41,12 @@ throw "Not Supported in ClojureScript";
 });
 speclj.config.load_runner = (function speclj$config$load_runner(name){
 try{return speclj.platform.dynamically_invoke.call(null,["speclj.run.",cljs.core.str.cljs$core$IFn$_invoke$arity$1(name)].join(''),["new-",cljs.core.str.cljs$core$IFn$_invoke$arity$1(name),"-runner"].join(''));
-}catch (e18985){var e = e18985;
+}catch (e4131){var e = e4131;
 throw (new Error(["Failed to load runner: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(name)].join(''),e));
 }});
 speclj.config.load_reporter_by_name = (function speclj$config$load_reporter_by_name(name){
 try{return speclj.platform.dynamically_invoke.call(null,["speclj.report.",cljs.core.str.cljs$core$IFn$_invoke$arity$1(name)].join(''),["new-",cljs.core.str.cljs$core$IFn$_invoke$arity$1(name),"-reporter"].join(''));
-}catch (e18986){var e = e18986;
+}catch (e4132){var e = e4132;
 throw (new Error(["Failed to load reporter: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(name)].join(''),e));
 }});
 speclj.config.load_reporter = (function speclj$config$load_reporter(name_or_object){
@@ -63,16 +63,16 @@ while(true){
 if(cljs.core.seq.call(null,values__$1)){
 var value = cljs.core.name.call(null,cljs.core.first.call(null,values__$1));
 if(cljs.core._EQ_.call(null,"~",cljs.core.first.call(null,value))){
-var G__18987 = cljs.core.update_in.call(null,result,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"excludes","excludes",-1791725945)], null),cljs.core.conj,cljs.core.keyword.call(null,cljs.core.apply.call(null,cljs.core.str,cljs.core.rest.call(null,value))));
-var G__18988 = cljs.core.rest.call(null,values__$1);
-result = G__18987;
-values__$1 = G__18988;
+var G__4133 = cljs.core.update_in.call(null,result,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"excludes","excludes",-1791725945)], null),cljs.core.conj,cljs.core.keyword.call(null,cljs.core.apply.call(null,cljs.core.str,cljs.core.rest.call(null,value))));
+var G__4134 = cljs.core.rest.call(null,values__$1);
+result = G__4133;
+values__$1 = G__4134;
 continue;
 } else {
-var G__18989 = cljs.core.update_in.call(null,result,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"includes","includes",-438304563)], null),cljs.core.conj,cljs.core.keyword.call(null,value));
-var G__18990 = cljs.core.rest.call(null,values__$1);
-result = G__18989;
-values__$1 = G__18990;
+var G__4135 = cljs.core.update_in.call(null,result,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"includes","includes",-438304563)], null),cljs.core.conj,cljs.core.keyword.call(null,value));
+var G__4136 = cljs.core.rest.call(null,values__$1);
+result = G__4135;
+values__$1 = G__4136;
 continue;
 }
 } else {
@@ -88,53 +88,53 @@ throw "Not Supported in ClojureScript";
  * Runs the given function with all the configurations set.  Useful in cljs because config-mappings can't be used.
  */
 speclj.config.with_config = (function speclj$config$with_config(config,action){
-var _STAR_runner_STAR__orig_val__18991 = speclj.config._STAR_runner_STAR_;
-var _STAR_reporters_STAR__orig_val__18992 = speclj.config._STAR_reporters_STAR_;
-var _STAR_specs_STAR__orig_val__18993 = speclj.config._STAR_specs_STAR_;
-var _STAR_color_QMARK__STAR__orig_val__18994 = speclj.config._STAR_color_QMARK__STAR_;
-var _STAR_omit_pending_QMARK__STAR__orig_val__18995 = speclj.config._STAR_omit_pending_QMARK__STAR_;
-var _STAR_full_stack_trace_QMARK__STAR__orig_val__18996 = speclj.config._STAR_full_stack_trace_QMARK__STAR_;
-var _STAR_tag_filter_STAR__orig_val__18997 = speclj.config._STAR_tag_filter_STAR_;
-var _STAR_runner_STAR__temp_val__18998 = (cljs.core.truth_(new cljs.core.Keyword(null,"runner","runner",1945441304).cljs$core$IFn$_invoke$arity$1(config))?(function (){
+var _STAR_runner_STAR__orig_val__4137 = speclj.config._STAR_runner_STAR_;
+var _STAR_reporters_STAR__orig_val__4138 = speclj.config._STAR_reporters_STAR_;
+var _STAR_specs_STAR__orig_val__4139 = speclj.config._STAR_specs_STAR_;
+var _STAR_color_QMARK__STAR__orig_val__4140 = speclj.config._STAR_color_QMARK__STAR_;
+var _STAR_omit_pending_QMARK__STAR__orig_val__4141 = speclj.config._STAR_omit_pending_QMARK__STAR_;
+var _STAR_full_stack_trace_QMARK__STAR__orig_val__4142 = speclj.config._STAR_full_stack_trace_QMARK__STAR_;
+var _STAR_tag_filter_STAR__orig_val__4143 = speclj.config._STAR_tag_filter_STAR_;
+var _STAR_runner_STAR__temp_val__4144 = (cljs.core.truth_(new cljs.core.Keyword(null,"runner","runner",1945441304).cljs$core$IFn$_invoke$arity$1(config))?(function (){
 cljs.core.println.call(null,"loading runner in config");
 
 return speclj.config.load_runner.call(null,new cljs.core.Keyword(null,"runner","runner",1945441304).cljs$core$IFn$_invoke$arity$1(config));
 })()
 :speclj.config.active_runner.call(null));
-var _STAR_reporters_STAR__temp_val__18999 = (cljs.core.truth_(new cljs.core.Keyword(null,"reporters","reporters",-373999166).cljs$core$IFn$_invoke$arity$1(config))?cljs.core.mapv.call(null,speclj.config.load_reporter,new cljs.core.Keyword(null,"reporters","reporters",-373999166).cljs$core$IFn$_invoke$arity$1(config)):speclj.config.active_reporters.call(null));
-var _STAR_specs_STAR__temp_val__19000 = new cljs.core.Keyword(null,"specs","specs",1426570741).cljs$core$IFn$_invoke$arity$1(config);
-var _STAR_color_QMARK__STAR__temp_val__19001 = new cljs.core.Keyword(null,"color","color",1011675173).cljs$core$IFn$_invoke$arity$1(config);
-var _STAR_omit_pending_QMARK__STAR__temp_val__19002 = new cljs.core.Keyword(null,"omit-pending","omit-pending",-1591740250).cljs$core$IFn$_invoke$arity$1(config);
-var _STAR_full_stack_trace_QMARK__STAR__temp_val__19003 = (!((new cljs.core.Keyword(null,"stacktrace","stacktrace",-95588394).cljs$core$IFn$_invoke$arity$1(config) == null)));
-var _STAR_tag_filter_STAR__temp_val__19004 = speclj.config.parse_tags.call(null,new cljs.core.Keyword(null,"tags","tags",1771418977).cljs$core$IFn$_invoke$arity$1(config));
-(speclj.config._STAR_runner_STAR_ = _STAR_runner_STAR__temp_val__18998);
+var _STAR_reporters_STAR__temp_val__4145 = (cljs.core.truth_(new cljs.core.Keyword(null,"reporters","reporters",-373999166).cljs$core$IFn$_invoke$arity$1(config))?cljs.core.mapv.call(null,speclj.config.load_reporter,new cljs.core.Keyword(null,"reporters","reporters",-373999166).cljs$core$IFn$_invoke$arity$1(config)):speclj.config.active_reporters.call(null));
+var _STAR_specs_STAR__temp_val__4146 = new cljs.core.Keyword(null,"specs","specs",1426570741).cljs$core$IFn$_invoke$arity$1(config);
+var _STAR_color_QMARK__STAR__temp_val__4147 = new cljs.core.Keyword(null,"color","color",1011675173).cljs$core$IFn$_invoke$arity$1(config);
+var _STAR_omit_pending_QMARK__STAR__temp_val__4148 = new cljs.core.Keyword(null,"omit-pending","omit-pending",-1591740250).cljs$core$IFn$_invoke$arity$1(config);
+var _STAR_full_stack_trace_QMARK__STAR__temp_val__4149 = (!((new cljs.core.Keyword(null,"stacktrace","stacktrace",-95588394).cljs$core$IFn$_invoke$arity$1(config) == null)));
+var _STAR_tag_filter_STAR__temp_val__4150 = speclj.config.parse_tags.call(null,new cljs.core.Keyword(null,"tags","tags",1771418977).cljs$core$IFn$_invoke$arity$1(config));
+(speclj.config._STAR_runner_STAR_ = _STAR_runner_STAR__temp_val__4144);
 
-(speclj.config._STAR_reporters_STAR_ = _STAR_reporters_STAR__temp_val__18999);
+(speclj.config._STAR_reporters_STAR_ = _STAR_reporters_STAR__temp_val__4145);
 
-(speclj.config._STAR_specs_STAR_ = _STAR_specs_STAR__temp_val__19000);
+(speclj.config._STAR_specs_STAR_ = _STAR_specs_STAR__temp_val__4146);
 
-(speclj.config._STAR_color_QMARK__STAR_ = _STAR_color_QMARK__STAR__temp_val__19001);
+(speclj.config._STAR_color_QMARK__STAR_ = _STAR_color_QMARK__STAR__temp_val__4147);
 
-(speclj.config._STAR_omit_pending_QMARK__STAR_ = _STAR_omit_pending_QMARK__STAR__temp_val__19002);
+(speclj.config._STAR_omit_pending_QMARK__STAR_ = _STAR_omit_pending_QMARK__STAR__temp_val__4148);
 
-(speclj.config._STAR_full_stack_trace_QMARK__STAR_ = _STAR_full_stack_trace_QMARK__STAR__temp_val__19003);
+(speclj.config._STAR_full_stack_trace_QMARK__STAR_ = _STAR_full_stack_trace_QMARK__STAR__temp_val__4149);
 
-(speclj.config._STAR_tag_filter_STAR_ = _STAR_tag_filter_STAR__temp_val__19004);
+(speclj.config._STAR_tag_filter_STAR_ = _STAR_tag_filter_STAR__temp_val__4150);
 
 try{return action.call(null);
-}finally {(speclj.config._STAR_tag_filter_STAR_ = _STAR_tag_filter_STAR__orig_val__18997);
+}finally {(speclj.config._STAR_tag_filter_STAR_ = _STAR_tag_filter_STAR__orig_val__4143);
 
-(speclj.config._STAR_full_stack_trace_QMARK__STAR_ = _STAR_full_stack_trace_QMARK__STAR__orig_val__18996);
+(speclj.config._STAR_full_stack_trace_QMARK__STAR_ = _STAR_full_stack_trace_QMARK__STAR__orig_val__4142);
 
-(speclj.config._STAR_omit_pending_QMARK__STAR_ = _STAR_omit_pending_QMARK__STAR__orig_val__18995);
+(speclj.config._STAR_omit_pending_QMARK__STAR_ = _STAR_omit_pending_QMARK__STAR__orig_val__4141);
 
-(speclj.config._STAR_color_QMARK__STAR_ = _STAR_color_QMARK__STAR__orig_val__18994);
+(speclj.config._STAR_color_QMARK__STAR_ = _STAR_color_QMARK__STAR__orig_val__4140);
 
-(speclj.config._STAR_specs_STAR_ = _STAR_specs_STAR__orig_val__18993);
+(speclj.config._STAR_specs_STAR_ = _STAR_specs_STAR__orig_val__4139);
 
-(speclj.config._STAR_reporters_STAR_ = _STAR_reporters_STAR__orig_val__18992);
+(speclj.config._STAR_reporters_STAR_ = _STAR_reporters_STAR__orig_val__4138);
 
-(speclj.config._STAR_runner_STAR_ = _STAR_runner_STAR__orig_val__18991);
+(speclj.config._STAR_runner_STAR_ = _STAR_runner_STAR__orig_val__4137);
 }});
 
 //# sourceMappingURL=config.js.map

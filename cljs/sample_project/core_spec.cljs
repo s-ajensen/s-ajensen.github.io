@@ -46,10 +46,7 @@
 
     (it "creates radio menu for game size"
       (with-redefs [components/radio-menu (stub :mock-radio-menu {:return "size menu"})]
-        (should-contain "size menu" (components/options-bar)))))
-
-  (describe "new game button"
-    ))
+        (should-contain "size menu" (components/options-bar))))))
 
 (describe "game board component"
   (it "indexes each position on board"

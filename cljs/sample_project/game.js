@@ -22,8 +22,8 @@ sample_project.game.progress_game = (function (){var method_table__4619__auto__ 
 var prefer_table__4620__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
 var method_cache__4621__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
 var cached_hierarchy__4622__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
-var hierarchy__4623__auto__ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.PersistentArrayMap.EMPTY,cljs.core.cst$kw$hierarchy,(function (){var fexpr__14274 = cljs.core.get_global_hierarchy;
-return (fexpr__14274.cljs$core$IFn$_invoke$arity$0 ? fexpr__14274.cljs$core$IFn$_invoke$arity$0() : fexpr__14274.call(null));
+var hierarchy__4623__auto__ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(cljs.core.PersistentArrayMap.EMPTY,cljs.core.cst$kw$hierarchy,(function (){var fexpr__6374 = cljs.core.get_global_hierarchy;
+return (fexpr__6374.cljs$core$IFn$_invoke$arity$0 ? fexpr__6374.cljs$core$IFn$_invoke$arity$0() : fexpr__6374.call(null));
 })());
 return (new cljs.core.MultiFn(cljs.core.symbol.cljs$core$IFn$_invoke$arity$2("sample-project.game","progress-game"),cljs.core.cst$kw$mode,cljs.core.cst$kw$default,hierarchy__4623__auto__,method_table__4619__auto__,prefer_table__4620__auto__,method_cache__4621__auto__,cached_hierarchy__4622__auto__));
 })();
@@ -34,9 +34,9 @@ return sample_project.move.move(selection,sample_project.move.cur_token(board),b
 }));
 sample_project.game.progress_ai = (function sample_project$game$progress_ai(state,selection){
 var board = cljs.core.cst$kw$state.cljs$core$IFn$_invoke$arity$1(state);
-var G__14275 = cljs.core.cst$kw$difficulty.cljs$core$IFn$_invoke$arity$1(state);
-var G__14276 = sample_project.move.move(selection,sample_project.move.cur_token(board),board);
-return (sample_project.move.next_move.cljs$core$IFn$_invoke$arity$2 ? sample_project.move.next_move.cljs$core$IFn$_invoke$arity$2(G__14275,G__14276) : sample_project.move.next_move.call(null,G__14275,G__14276));
+var G__6375 = cljs.core.cst$kw$difficulty.cljs$core$IFn$_invoke$arity$1(state);
+var G__6376 = sample_project.move.move(selection,sample_project.move.cur_token(board),board);
+return (sample_project.move.next_move.cljs$core$IFn$_invoke$arity$2 ? sample_project.move.next_move.cljs$core$IFn$_invoke$arity$2(G__6375,G__6376) : sample_project.move.next_move.call(null,G__6375,G__6376));
 });
 sample_project.game.progress_game.cljs$core$IMultiFn$_add_method$arity$3(null,cljs.core.cst$kw$pvc,(function (state,selection){
 return sample_project.game.progress_ai(state,selection);
